@@ -1,0 +1,160 @@
+/*------------extra important thing in all pages------------*/
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/segoeUi/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/segoeUi/SegoeUIBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/segoeUi/SegoeUIItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/segoeUi/SegoeUIBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body a:visited {
+    color: inherit;
+    text-decoration: initial;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: initial;
+}
+
+body a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: initial;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    ;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3em;
+    letter-spacing: normal;
+    color: black;
+}
+
+.website_container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+header,
+nav,
+div {
+    overflow: hidden;
+}
+
+img {
+    object-fit: contain;
+}
+
+a {
+    display: inline-block;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+p {
+    overflow: auto;
+    max-height: 100%;
+}
+
+.d_b {
+    display: block;
+}
+
+.l_r_f {
+    /*list_row_flexbox*/
+    display: flex;
+}
+
+.l_no_b {
+    /*list_no_bullets*/
+    list-style-type: none;
+}
+
+.h_y a:hover {
+    color: #ffd200;
+}
+
+.h_b a:hover {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.yellow {
+    color: #ffd200;
+}
+
+.grey {
+    color: grey;
+}
+
+.f_w_n {
+    font-weight: normal;
+}
+
+.marge_l_auto {
+    /*margin left auto*/
+    margin-left: auto;
+}
+
+.marge_r_auto {
+    margin-right: auto;
+}
+
+.m_0_p_0 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.marge_TB0_LRauto {
+    margin: 0 auto;
+}
+
+.li_icon {
+    width: 20px;
+    height: 20px;
+}

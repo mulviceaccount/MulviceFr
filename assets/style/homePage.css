@@ -1,0 +1,754 @@
+/*------main design------*/
+
+.li_icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.rating_star {
+    background: url(../images/star@2x.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+
+.rating_star.checked {
+    background-image: url(../images/starGold@3x.png);
+}
+
+.profil_user_name .connected_symbol {
+    display: inline-block;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+}
+
+.connected_symbol.connected {
+    background-color: #33e62b;
+}
+
+.connected_symbol.disconnected {
+    border: grey solid 2px;
+    border-radius: 50%;
+}
+
+
+/*------------profilPage------------*/
+
+
+/*----profilePageProfil----*/
+
+#profil_main_container {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 250px;
+}
+
+
+/*----map----*/
+
+.map_c {
+    height: 400px;
+}
+
+
+/*----search----*/
+
+#search_container {
+    position: relative;
+    top: -100px;
+}
+
+.search_c {
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: relative;
+}
+
+.search_up {
+    height: 40px;
+    border-bottom: black solid 0.1px;
+    font-size: 1.7rem;
+}
+
+.search_up p {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transform: translateY(-60%);
+    background-color: white;
+    padding: 0px 4px;
+    overflow: visible;
+}
+
+.search_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 44px 10px;
+}
+
+.search_items>div {
+    margin: 10px;
+    height: 50px;
+}
+
+.s_item {
+    border: black solid 1px;
+    border-radius: 24px;
+}
+
+.s_simple {
+    flex: 1 1 20%;
+}
+
+.s_advanced {
+    flex: 1 1 20%;
+    display: none;
+}
+
+.search_items .s_button_c {
+    flex: 1 1 132px;
+    max-width: 132px;
+}
+
+.search_items .s_more_c {
+    flex: 1 1 35px;
+    max-width: 35px;
+}
+
+.s_item input {
+    width: 77%;
+    height: 90%;
+    border: none;
+    margin: 2px 0px;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.s_item select {
+    width: 90%;
+    height: 90%;
+    border: none;
+    margin: 2px 5%;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: grey;
+}
+
+.s_item select option {
+    color: black;
+}
+
+.s_item input:focus,
+.s_item select:focus {
+    outline-offset: unset;
+    outline: unset;
+}
+
+input#s_keyWord {
+    background: url("../images/hashtag_grey.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+input#s_location {
+    background: url("../images/location_grey.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+input#s_category {
+    background: url("../images/list_grey.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+select#s_day {
+    background: url("../images/day.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+select#s_gender {
+    background: url("../images/gender.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+select#s_age {
+    background: url("../images/age.png") no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    background-size: 15px;
+    text-indent: 20px;
+}
+
+.s_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd200;
+    border-radius: 24px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.s_button img {
+    margin-right: 10px;
+}
+
+#s_more_i {
+    display: block;
+    margin: 10.5px auto;
+    cursor: pointer;
+}
+
+
+/*----section articles----*/
+
+section.s_skills_c {
+    margin: 0px auto 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s_skills_c .a_skill_c {
+    margin: 10px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 498px;
+}
+
+.a_skill_c .article_skill_image {
+    width: 100%;
+    height: 200px;
+}
+
+.a_skill_c .article_skill_image img {
+    width: 350px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.article_skill_image img.shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.skill_id_c {
+    z-index: 1;
+    position: absolute;
+    top: 161px;
+    height: 70px;
+    width: 100%;
+}
+
+.skill_id_photo_c {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffd200;
+    margin: 0px 6px 0px 6%;
+    float: left;
+}
+
+.skill_id_photo_c .skill_id_photo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 55%;
+}
+
+.skill_id_photo.plumbing {
+    background-image: url(../images/tap@3x.png);
+}
+
+.skill_id_photo.electrician {
+    background-image: url(../images/light@3x.png);
+}
+
+.skill_id_photo.mechanic {
+    background-image: url(../images/wrench@3x.png);
+}
+
+.skill_availability_c {
+    margin: 15px 0px 20px 0px;
+    width: 100%;
+    height: 29px;
+}
+
+.skill_availability {
+    margin-left: auto;
+    margin-right: 4px;
+    padding: 0.4rem 0px;
+    max-width: 50%;
+    border-radius: 15px 0% 0% 15px;
+}
+
+.skill_availability img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.skill_availability p {
+    text-align: center;
+    text-transform: uppercase;
+    height: 25px;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill_discription_c {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin: 4px 0px 35px 0px;
+    overflow: hidden;
+}
+
+.skill_discription {
+    height: 100%;
+    padding: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 15px;
+    overflow: auto;
+}
+
+.skill_rating_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 45px;
+    font-size: 0.9rem;
+}
+
+.skill_rating_c div {
+    margin: 0px 14px 0px 2px;
+    height: 20px;
+}
+
+.skill_rating_c div p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skill_rating_c div img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.skill_rating_c ul {
+    padding: 0px;
+}
+
+.skill_rating_c .rating_number {
+    margin-left: 7px;
+    margin-top: 3px;
+}
+
+
+/*----after article----*/
+
+#more_article_c .more_article {
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #ffd200;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#more_article_c .more_article p {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+
+/*----pre footer----*/
+
+#pre_footer_c .pre_footer {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#pre_footer_c .pre_footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#pre_footer_c .p_f_anchor {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #ffd200;
+    border: #ffd200 solid 3px;
+    border-radius: 35px;
+    text-align: center;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: rgba(2, 2, 2, 0.7);
+}
+
+
+/*-------------media query------------*/
+
+@media all and (min-width: 1261px) {
+    /*width>=1260px*/
+    #main_header nav,
+    .footer_container,
+    .sub_footer,
+    section.s_skills_c {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .map_c,
+    #search_container {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:1260px) {
+    /*1260px>=width*/
+    #main_header nav,
+    .footer_container,
+    .sub_footer,
+    section.s_skills_c {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .s_skills_c .a_skill_c {
+        width: 290px;
+    }
+    .a_skill_c .article_skill_image img {
+        width: 290px;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .search_items {
+        overflow: visible;
+    }
+    .search_items .s_more_c {
+        position: absolute;
+        bottom: -20px;
+    }
+}
+
+@media all and (max-width:768px) {
+    #profil_main_container {
+        margin-bottom: 750px;
+        margin-top: 60px;
+    }
+    /*footer*/
+    footer {
+        height: auto;
+        max-height: 709px;
+    }
+    .footer_container {
+        flex-wrap: wrap;
+    }
+    .footer_container>div {
+        flex-basis: 100%;
+    }
+    .line_footer {
+        margin: 10px 0px;
+        display: inline-block;
+        width: 100%;
+        border: white solid 0.5px;
+    }
+    .footer_contact_c>div {
+        margin-left: 0px;
+    }
+    .footer_logo_mulvice_c {
+        top: 10px;
+        bottom: unset;
+    }
+    .sub_footer_c {
+        position: unset;
+        height: 60px
+    }
+    #footer_social_media_c {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #383838;
+        padding: 0px 20px;
+        margin: 0;
+    }
+    #copywrite_p_c {
+        max-width: unset;
+    }
+    .footer_container .footer_service_c {
+        margin-top: 50px;
+    }
+    /*----main header----*/
+    #h_c_us,
+    #h_cat,
+    .nav_login_in_c,
+    .nav_recipient_c {
+        border-left: white solid 3px;
+    }
+    #main_header .nav_list_c li {
+        height: 60px;
+        width: 40px;
+        margin: 0px;
+        background: #ffd200;
+    }
+    .nav_list_c span,
+    #main_header .nav_recipient_c span {
+        display: none;
+    }
+    #main_header .nav_list_c a,
+    #main_header .nav_recipient_c a {
+        display: inline-block;
+        max-height: 60px;
+        padding: 17px 8px;
+    }
+    #main_header .nav_recipient_c img {
+        margin-right: 0px;
+    }
+    #main_header .nav_list_c img {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+    #main_header .nav_recipient_c {
+        width: 40px;
+    }
+    #main_header .nav_list_c {
+        margin-right: 0;
+    }
+    .search_c {
+        width: 55%;
+    }
+    .s_simple {
+        flex: 1 1 54%;
+    }
+    .s_advanced {
+        flex: 1 1 40%;
+    }
+    .s_button {
+        width: 138px;
+        margin: 0px auto;
+    }
+    .search_items .s_button_c {
+        flex: 1 1 100%;
+        max-width: unset;
+    }
+    .search_up p {
+        font-size: 1.4rem;
+        left: 20px;
+    }
+    #pre_footer_c .p_f_anchor {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width:425px)
+/*425px>=width*/
+
+{
+    #main_header nav {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #main_header {
+        height: 45px;
+    }
+    #main_header .nav_logo_c img {
+        width: 80px;
+        height: 45px;
+        margin-left: 6px;
+    }
+    #main_header .nav_logo_c {
+        min-width: 99px;
+    }
+    #main_header nav {
+        height: 45px;
+    }
+    #main_header .nav_list_c li,
+    #main_header .nav_login_in_c,
+    #main_header .nav_recipient_c {
+        width: 30px;
+        height: 100%;
+    }
+    #main_header .nav_list_c img,
+    #main_header .nav_login_in_c img,
+    #main_header .nav_recipient_c img {
+        width: 18px;
+        height: 18px;
+    }
+    #main_header .nav_list_c li a,
+    #main_header .nav_login_in_c a,
+    #main_header .nav_recipient_c a {
+        padding: 13.5px 6px;
+    }
+    /*----articles----*/
+    .s_skills_c .a_skill_c {
+        width: 215px;
+        height: 385px;
+    }
+    .a_skill_c .article_skill_image {
+        width: 215px;
+        height: 130px;
+    }
+    .a_skill_c .article_skill_image img {
+        width: 215px;
+        height: 130px;
+    }
+    .skill_id_photo_c {
+        width: 50px;
+        height: 50px;
+    }
+    .skill_id_c {
+        top: 95px;
+    }
+    .skill_id_c h3 {
+        font-size: 1rem;
+    }
+    .skill_id h4 {
+        font-size: 0.9rem;
+    }
+    .skill_discription_c {
+        margin-bottom: 10px;
+    }
+    .skill_availability_c {
+        margin-bottom: 12px;
+        margin-top: 7px;
+        font-size: 0.7rem;
+    }
+    .skill_discription {
+        font-size: 0.8rem;
+    }
+    .skill_rating_c div {
+        margin-right: 5px;
+    }
+    .skill_rating_c div img {
+        width: 15px;
+        height: 15px;
+    }
+    .skill_rating_c {
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+    .skill_rating_c .li_icon {
+        width: 20px;
+        height: 20px;
+    }
+    .search_c {
+        width: 81%;
+    }
+    #profil_main_container {
+        margin-bottom: 750px;
+        margin-top: 45px;
+    }
+    .s_advanced {
+        flex-basis: 54%;
+    }
+}
+
+@media all and (max-width:320px)
+/*320px>=width*/
+
+{
+    html {
+        font-size: 10px;
+    }
+    #main_header nav,
+    .footer_container,
+    .sub_footer,
+    section.s_skills_c {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #main_header .nav_logo_c img {
+        width: 80px;
+        margin-left: 6px;
+    }
+    #main_header .nav_list_c li,
+    #main_header .nav_login_in_c,
+    #main_header .nav_recipient_c {
+        width: 25px;
+    }
+    #main_header .nav_list_c img,
+    #main_header .nav_login_in_c img,
+    #main_header .nav_recipient_c img {
+        width: 12px;
+        height: 12px;
+    }
+    #main_header .nav_list_c li a,
+    #main_header .nav_login_in_c a,
+    #main_header .nav_recipient_c a {
+        padding: 17px 6.5px;
+    }
+    #main_header .nav_logo_c {
+        min-width: 60px;
+    }
+    #main_header .nav_logo_c img {
+        width: 60px;
+        margin-left: 10px;
+    }
+    .skill_id_c {
+        top: 102px;
+    }
+    .skill_rating_c div {
+        padding-top: 5px;
+    }
+    .skill_availability_c {
+        font-size: unset;
+    }
+    .skill_discription {
+        font-size: unset;
+        line-height: 1.7rem;
+    }
+    .search_up p {
+        font-size: 1.8rem;
+    }
+}

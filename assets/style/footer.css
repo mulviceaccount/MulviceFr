@@ -1,0 +1,180 @@
+/*-----------------------------footer-----------------------------*/
+
+footer {
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 220px;
+    background-color: #383838;
+    overflow: hidden;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.footer_container {
+    height: 75%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px 0px 30px 0px;
+}
+
+.footer_container>div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.footer_container .footer_service_c {
+    flex-basis: 30%;
+    overflow: visible;
+    height: 120%;
+}
+
+.footer_platform_c {
+    flex-basis: 20%;
+}
+
+.footer_for_user_c {
+    flex-basis: 20%;
+}
+
+.footer_contact_c {
+    flex-basis: 25%;
+}
+
+.footer_container h3 {
+    margin: 0px 0px 9px 0px;
+    color: #ffd200;
+    width: 100%;
+}
+
+.footer_container p {
+    margin: -4px 0px 7px 0px;
+}
+
+.footer_container ul {
+    padding: 0px 0px 0px 11px;
+}
+
+.footer_container ul.logo_bullets span {
+    margin-left: -11px;
+}
+
+.footer_container ul li {
+    margin-bottom: 5px;
+}
+
+.footer_service_c ul.footer_button {
+    padding-left: 0px;
+}
+
+.footer_button li {
+    padding: 0px 0px 6px 0px;
+}
+
+.footer_button li a {
+    padding: 4px 10px;
+    height: 20.5px;
+    border: #ffd200 solid 0.5px;
+    border-radius: 10.5px;
+}
+
+.sub_footer_c {
+    position: relative;
+    border-top: #464646 solid 0.1px;
+    height: 25%;
+    width: 100%;
+    overflow: visible;
+}
+
+.sub_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sub_footer>div {
+    margin: 0px 5px;
+}
+
+#copywrite_p_c {
+    flex: 2 2 33.4%;
+    max-width: 33.4%;
+    white-space: normal;
+}
+
+#footer_social_media_c {
+    flex: 1 1 auto;
+    max-width: 90px;
+    margin-left: auto;
+}
+
+.sub_footer ul {
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.footer_logo_mulvice_c {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #383838;
+    padding: 0px 20px;
+}
+
+.footer_logo_mulvice {
+    display: block;
+    max-height: 63px;
+    min-width: 143px;
+    margin: 0px auto;
+}
+
+.sub_footer_c ul li {
+    margin: 0px 4px 0px 0px;
+}
+
+.footer_social_media {
+    width: 20px;
+}
+
+ul.yellow_bullets>li::before {
+    content: "\2022";
+    color: #ffd200;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    font-size: 1.3em;
+    margin: 0px 0.2em 0px -0.7em;
+    vertical-align: top;
+}
+
+.footer_contact_c li.mail_logo::before {
+    background-image: url(../images/email-filled-closed-envelope@2x.png);
+}
+
+.footer_contact_c li.mobile_logo::before {
+    background-image: url(../images/call-answer@2x.png);
+}
+
+.footer_contact_c li.location_logo::before {
+    background-image: url(../images/location-sign-gold@2x.png);
+    width: 10px;
+}
+
+footer img.li_icon {
+    width: 15px;
+    height: 15px;
+}
