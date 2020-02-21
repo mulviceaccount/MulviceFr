@@ -5,32 +5,34 @@
 }
 
 /*-------------detailed service----------------*/
+
 /*---header---*/
-#h_m_cover_c{
+
+#h_m_cover_c {
     height: 400px;
     position: relative;
 }
 
-div#h_m_c_text_c{
+div#h_m_c_text_c {
     position: absolute;
     left: 5%;
     right: 5%;
     top: 25%;
 }
 
-#h_m_cover_c img{
+#h_m_cover_c img {
     object-fit: cover;
     width: 100%;
     height: 400px;
 }
 
-#h_m_cover_c img.shadow_img{
+#h_m_cover_c img.shadow_img {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
 
-#h_m_c_text_c h2{
+#h_m_c_text_c h2 {
     text-align: center;
     font-size: 3.5rem;
     line-height: 4rem;
@@ -38,7 +40,7 @@ div#h_m_c_text_c{
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-#h_m_c_text_c h3{
+#h_m_c_text_c h3 {
     text-align: center;
     font-size: 1.2rem;
     line-height: 3rem;
@@ -48,36 +50,37 @@ div#h_m_c_text_c{
 }
 
 /*---owner bar info---*/
-#owner_bar_inf_c{
+
+#owner_bar_inf_c {
     height: 100px;
     background-color: #f0f0f0;
 }
 
-#owner_bar_inf{
+#owner_bar_inf {
     height: 90px;
     display: flex;
     margin: 5px 30px;
     float: left;
 }
 
-#o_b_image_c{
+#o_b_image_c {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-#o_b_image_c img{
+#o_b_image_c img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-#o_b_inf{
+#o_b_inf {
     margin-top: 5px;
 }
 
-#o_b_inf > div{
+#o_b_inf>div {
     margin-top: 10px;
     display: flex;
 }
@@ -86,8 +89,7 @@ div#h_m_c_text_c{
     margin-right: 15px;
 }
 
-
-#o_b_modify_service{
+#o_b_modify_service {
     width: fit-content;
     background-color: #33a62b;
     height: 40px;
@@ -95,12 +97,13 @@ div#h_m_c_text_c{
     border-radius: 27px;
 }
 
-#o_b_m_s_p_c{
+#o_b_m_s_p_c {
     height: 20px;
     padding: 0px 20px;
     margin: 10px 0px;
 }
-#o_b_m_s_p_c p{
+
+#o_b_m_s_p_c p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     overflow: visible;
@@ -109,19 +112,19 @@ div#h_m_c_text_c{
 
 /*---detailed service main---*/
 
-#detailed_service_main{
+#detailed_service_main {
     margin: 40px 30px;
     display: flex;
 }
 
-#d_s_m_box_1{
+#d_s_m_box_1 {
     flex: 1 1 30%;
     min-width: 30%;
     width: 30%;
     margin: 0px 5% 0px 0px;
 }
 
-#d_s_m_box_2{
+#d_s_m_box_2 {
     flex: 1 1 65%;
     min-width: 65%;
     width: 65%;
@@ -132,9 +135,7 @@ div#h_m_c_text_c{
 
 @media all and (min-width: 1261px) {
     /*width>=1260px*/
-    #main_header nav,
-    .footer_container,
-    .sub_footer{
+    .footer_container, .sub_footer {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -146,17 +147,13 @@ div#h_m_c_text_c{
 
 @media all and (max-width:1260px) {
     /*1260px>=width*/
-    #main_header nav,
-    .footer_container,
-    .sub_footer{
+    .footer_container, .sub_footer {
         margin-left: 30px;
         margin-right: 30px;
     }
 }
 
-@media all and (max-width:1024px) {
-    
-}
+@media all and (max-width:1024px) {}
 
 @media all and (max-width:768px) {
     #profil_main_container {
@@ -206,127 +203,26 @@ div#h_m_c_text_c{
     .footer_container .footer_service_c {
         margin-top: 50px;
     }
-    /*----main header----*/
-    #h_c_us,
-    #h_cat,
-    .nav_login_in_c,
-    .nav_recipient_c {
-        border-left: white solid 3px;
-    }
-    #main_header .nav_list_c li {
-        height: 60px;
-        width: 40px;
-        margin: 0px;
-        background: #ffd200;
-    }
-    .nav_list_c span,
-    #main_header .nav_recipient_c span {
-        display: none;
-    }
-    #main_header .nav_list_c a,
-    #main_header .nav_recipient_c a {
-        display: inline-block;
-        max-height: 60px;
-        padding: 17px 8px;
-    }
-    #main_header .nav_recipient_c img {
-        margin-right: 0px;
-    }
-    #main_header .nav_list_c img {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-    }
-    #main_header .nav_recipient_c {
-        width: 40px;
-    }
-    #main_header .nav_list_c {
-        margin-right: 0;
-    }
     #pre_footer_c .p_f_anchor {
         font-size: 1rem;
     }
 }
 
-@media all and (max-width:425px){
+@media all and (max-width:425px) {
     /*425px>=width*/
-    #main_header nav {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #main_header {
-        height: 45px;
-    }
-    #main_header .nav_logo_c img {
-        width: 80px;
-        height: 45px;
-        margin-left: 6px;
-    }
-    #main_header .nav_logo_c {
-        min-width: 99px;
-    }
-    #main_header nav {
-        height: 45px;
-    }
-    #main_header .nav_list_c li,
-    #main_header .nav_login_in_c,
-    #main_header .nav_recipient_c {
-        width: 30px;
-        height: 100%;
-    }
-    #main_header .nav_list_c img,
-    #main_header .nav_login_in_c img,
-    #main_header .nav_recipient_c img {
-        width: 18px;
-        height: 18px;
-    }
-    #main_header .nav_list_c li a,
-    #main_header .nav_login_in_c a,
-    #main_header .nav_recipient_c a {
-        padding: 13.5px 6px;
-    }
     #profil_main_container {
         margin-bottom: 750px;
         margin-top: 45px;
     }
 }
 
-@media all and (max-width:320px){
+@media all and (max-width:320px) {
     /*320px>=width*/
     html {
         font-size: 10px;
     }
-    #main_header nav,
-    .footer_container,
-    .sub_footer{
+    .footer_container, .sub_footer {
         margin-left: 5px;
         margin-right: 5px;
-    }
-    #main_header .nav_logo_c img {
-        width: 80px;
-        margin-left: 6px;
-    }
-    #main_header .nav_list_c li,
-    #main_header .nav_login_in_c,
-    #main_header .nav_recipient_c {
-        width: 25px;
-    }
-    #main_header .nav_list_c img,
-    #main_header .nav_login_in_c img,
-    #main_header .nav_recipient_c img {
-        width: 12px;
-        height: 12px;
-    }
-    #main_header .nav_list_c li a,
-    #main_header .nav_login_in_c a,
-    #main_header .nav_recipient_c a {
-        padding: 17px 6.5px;
-    }
-    #main_header .nav_logo_c {
-        min-width: 60px;
-    }
-    #main_header .nav_logo_c img {
-        width: 60px;
-        margin-left: 10px;
     }
 }

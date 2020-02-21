@@ -34,9 +34,7 @@
     border-radius: 50%;
 }
 
-
 /*------------profilPage------------*/
-
 
 /*----profilePageProfil----*/
 
@@ -46,13 +44,11 @@
     margin-bottom: 250px;
 }
 
-
 /*----map----*/
 
 .map_c {
     height: 400px;
 }
-
 
 /*----search----*/
 
@@ -149,8 +145,7 @@
     color: black;
 }
 
-.s_item input:focus,
-.s_item select:focus {
+.s_item input:focus, .s_item select:focus {
     outline-offset: unset;
     outline: unset;
 }
@@ -222,7 +217,6 @@ select#s_age {
     margin: 10.5px auto;
     cursor: pointer;
 }
-
 
 /*----section articles----*/
 
@@ -378,7 +372,6 @@ section.s_skills_c {
     margin-top: 3px;
 }
 
-
 /*----after article----*/
 
 #more_article_c .more_article {
@@ -397,7 +390,6 @@ section.s_skills_c {
     font-size: 1.2rem;
     overflow: hidden;
 }
-
 
 /*----pre footer----*/
 
@@ -429,21 +421,16 @@ section.s_skills_c {
     background-color: rgba(2, 2, 2, 0.7);
 }
 
-
 /*-------------media query------------*/
 
 @media all and (min-width: 1261px) {
     /*width>=1260px*/
-    #main_header nav,
-    .footer_container,
-    .sub_footer,
-    section.s_skills_c {
+    .footer_container, .sub_footer, section.s_skills_c {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
-    .map_c,
-    #search_container {
+    .map_c, #search_container {
         max-width: 1500px;
         margin-left: auto;
         margin-right: auto;
@@ -455,10 +442,7 @@ section.s_skills_c {
 
 @media all and (max-width:1260px) {
     /*1260px>=width*/
-    #main_header nav,
-    .footer_container,
-    .sub_footer,
-    section.s_skills_c {
+    .footer_container, .sub_footer, section.s_skills_c {
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -528,43 +512,6 @@ section.s_skills_c {
     .footer_container .footer_service_c {
         margin-top: 50px;
     }
-    /*----main header----*/
-    #h_c_us,
-    #h_cat,
-    .nav_login_in_c,
-    .nav_recipient_c {
-        border-left: white solid 3px;
-    }
-    #main_header .nav_list_c li {
-        height: 60px;
-        width: 40px;
-        margin: 0px;
-        background: #ffd200;
-    }
-    .nav_list_c span,
-    #main_header .nav_recipient_c span {
-        display: none;
-    }
-    #main_header .nav_list_c a,
-    #main_header .nav_recipient_c a {
-        display: inline-block;
-        max-height: 60px;
-        padding: 17px 8px;
-    }
-    #main_header .nav_recipient_c img {
-        margin-right: 0px;
-    }
-    #main_header .nav_list_c img {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-    }
-    #main_header .nav_recipient_c {
-        width: 40px;
-    }
-    #main_header .nav_list_c {
-        margin-right: 0;
-    }
     .search_c {
         width: 55%;
     }
@@ -591,45 +538,9 @@ section.s_skills_c {
     }
 }
 
-@media all and (max-width:425px)
 /*425px>=width*/
 
-{
-    #main_header nav {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #main_header {
-        height: 45px;
-    }
-    #main_header .nav_logo_c img {
-        width: 80px;
-        height: 45px;
-        margin-left: 6px;
-    }
-    #main_header .nav_logo_c {
-        min-width: 99px;
-    }
-    #main_header nav {
-        height: 45px;
-    }
-    #main_header .nav_list_c li,
-    #main_header .nav_login_in_c,
-    #main_header .nav_recipient_c {
-        width: 30px;
-        height: 100%;
-    }
-    #main_header .nav_list_c img,
-    #main_header .nav_login_in_c img,
-    #main_header .nav_recipient_c img {
-        width: 18px;
-        height: 18px;
-    }
-    #main_header .nav_list_c li a,
-    #main_header .nav_login_in_c a,
-    #main_header .nav_recipient_c a {
-        padding: 13.5px 6px;
-    }
+@media all and (max-width:425px) {
     /*----articles----*/
     .s_skills_c .a_skill_c {
         width: 215px;
@@ -694,46 +605,15 @@ section.s_skills_c {
     }
 }
 
-@media all and (max-width:320px)
 /*320px>=width*/
 
-{
+@media all and (max-width:320px) {
     html {
         font-size: 10px;
     }
-    #main_header nav,
-    .footer_container,
-    .sub_footer,
-    section.s_skills_c {
+    .footer_container, .sub_footer, section.s_skills_c {
         margin-left: 5px;
         margin-right: 5px;
-    }
-    #main_header .nav_logo_c img {
-        width: 80px;
-        margin-left: 6px;
-    }
-    #main_header .nav_list_c li,
-    #main_header .nav_login_in_c,
-    #main_header .nav_recipient_c {
-        width: 25px;
-    }
-    #main_header .nav_list_c img,
-    #main_header .nav_login_in_c img,
-    #main_header .nav_recipient_c img {
-        width: 12px;
-        height: 12px;
-    }
-    #main_header .nav_list_c li a,
-    #main_header .nav_login_in_c a,
-    #main_header .nav_recipient_c a {
-        padding: 17px 6.5px;
-    }
-    #main_header .nav_logo_c {
-        min-width: 60px;
-    }
-    #main_header .nav_logo_c img {
-        width: 60px;
-        margin-left: 10px;
     }
     .skill_id_c {
         top: 102px;
