@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/style/extra.css">
     <link rel="stylesheet" href="assets/style/homePage.css">
+    <link rel="stylesheet" href="assets/style/cards.css">
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <title>Mulvice</title>
@@ -108,7 +109,12 @@
                                 <input type="text" name="s_location" id="s_location" placeholder="Location">
                             </div>
                             <div class="s_item s_simple s_category_c">
-                                <input type="text" name="s_category" id="s_category" placeholder="Catégorie">
+                                <select class="s_select" name="s_category" id="s_category" form="">
+                                    <option value="0" disabled hidden selected>Catégorie</option>
+                                    <option value="0">Electricien</option>
+                                    <option value="1">Mécanicien Auto</option>
+                                    <option value="2">Plomberie Bàtiment</option>
+                                </select>
                             </div>
                             <div class="s_item s_advanced s_day_c">
                                 <select class="s_select" name="s_day" id="s_day" form="">
