@@ -423,9 +423,10 @@ section.s_skills_c {
 
 /*-------------media query------------*/
 
+/*width>=1260px*/
+
 @media all and (min-width: 1261px) {
-    /*width>=1260px*/
-    .footer_container, .sub_footer, section.s_skills_c {
+    section.s_skills_c {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -435,14 +436,12 @@ section.s_skills_c {
         margin-left: auto;
         margin-right: auto;
     }
-    .footer_container {
-        width: 100%;
-    }
 }
 
+/*1260px>=width*/
+
 @media all and (max-width:1260px) {
-    /*1260px>=width*/
-    .footer_container, .sub_footer, section.s_skills_c {
+    section.s_skills_c {
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -469,49 +468,6 @@ section.s_skills_c {
         margin-bottom: 750px;
         margin-top: 60px;
     }
-    /*footer*/
-    footer {
-        height: auto;
-        max-height: 709px;
-    }
-    .footer_container {
-        flex-wrap: wrap;
-    }
-    .footer_container>div {
-        flex-basis: 100%;
-    }
-    .line_footer {
-        margin: 10px 0px;
-        display: inline-block;
-        width: 100%;
-        border: white solid 0.5px;
-    }
-    .footer_contact_c>div {
-        margin-left: 0px;
-    }
-    .footer_logo_mulvice_c {
-        top: 10px;
-        bottom: unset;
-    }
-    .sub_footer_c {
-        position: unset;
-        height: 60px
-    }
-    #footer_social_media_c {
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #383838;
-        padding: 0px 20px;
-        margin: 0;
-    }
-    #copywrite_p_c {
-        max-width: unset;
-    }
-    .footer_container .footer_service_c {
-        margin-top: 50px;
-    }
     .search_c {
         width: 55%;
     }
@@ -532,9 +488,6 @@ section.s_skills_c {
     .search_up p {
         font-size: 1.4rem;
         left: 20px;
-    }
-    #pre_footer_c .p_f_anchor {
-        font-size: 1rem;
     }
 }
 
@@ -611,7 +564,7 @@ section.s_skills_c {
     html {
         font-size: 10px;
     }
-    .footer_container, .sub_footer, section.s_skills_c {
+    section.s_skills_c {
         margin-left: 5px;
         margin-right: 5px;
     }
