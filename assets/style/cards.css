@@ -175,6 +175,23 @@ section.s_skills_c {
     font-size: 0.9rem;
 }
 
+.skill_notice {
+    display: none;
+    margin-left: 25px;
+    margin-right: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.skill_notice p {
+    line-height: 21px;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60px;
+}
+
 .skill_account {
     margin-left: 25px;
     margin-right: 10px;
@@ -217,20 +234,62 @@ section.s_skills_c {
     overflow: hidden;
 }
 
-.rating_star {
+.s_skills_c .rating_star {
     background: url(../images/star@2x.png) no-repeat 50% 50%;
     background-size: 100%;
 }
 
-.rating_star.checked {
+.s_skills_c .rating_star.checked {
     background-image: url(../images/starGold@3x.png);
 }
 
-.li_icon.rating_star {
+.s_skills_c .li_icon.rating_star {
     width: 25px;
     height: 25px;
     margin-right: 2px;
     vertical-align: middle;
+}
+
+.a_skill_c.add_new_skill_c {
+    background-color: #dfdfdf;
+}
+
+.a_skill_c.add_new_skill_c > a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.s_skills_c .add_new_skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.s_skills_c  .add_new_skill_btn_c {
+    width: 135px;
+    height: 135px;
+    line-height: 135px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.s_skills_c  .add_new_skill_btn_c svg{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    fill: #dfdfdf;
+}
+
+.s_skills_c  .add_new_skill_text {
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #f0f0f0;
 }
 
 /*----after article----*/
@@ -350,7 +409,7 @@ section.s_skills_c {
         width: 10px;
         height: 8px;
     }
-    .li_icon.rating_star {
+    .s_skills_c .li_icon.rating_star {
         width: 18px;
         height: 18px;
     }

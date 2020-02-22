@@ -32,6 +32,7 @@
     background-color: #fafafa;
     height: 170px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 #profil_header {
@@ -52,6 +53,7 @@
 #profil_header .photo_id_c {
     flex-basis: 140px;
     min-width: 140px;
+    margin-right: 20px;
 }
 
 #profil_header .photo_id_c img {
@@ -60,13 +62,18 @@
 }
 
 #profil_header .profil_information_c {
-    min-width: 44%;
-    flex: 1 1 44%;
+    min-width: 50%;
+    flex: 1 1 50%;
+    margin-right: 20px;
 }
 
 #profil_header .profil_information_c .profil_user_name {
     position: absolute;
     top: 0px;
+}
+
+#profil_header .profil_information_c .profil_user_name h3 {
+    white-space: nowrap;
 }
 
 .li_icon {
@@ -109,11 +116,16 @@
     overflow: hidden;
     display: flex;
     flex-flow: wrap column;
-    padding-left: 7px;
+    margin-left: -54px;
 }
 
 #profil_header .profil_information_c>ul li {
     margin-top: 7px;
+    margin-left: 20px;
+    max-width: calc(50% - 20px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .profil_information_c span {
@@ -128,155 +140,24 @@
 #profil_header .profil_information_c ul .rating_star.li_icon {
     width: 21px;
     height: 21px;
+    margin-left: unset;
 }
 
 #profil_header .profil_description {
     flex: 1 1 35%;
-    min-width: 35%;
-    max-width: 40%;
+    min-width: 100px;
+    max-width: 30%;
     margin-left: auto;
+    margin-right: 10%;
 }
 
-/*----section articles----*/
-
-section.s_skills_c {
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.s_skills_c .a_skill_c {
-    margin: 10px 15px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 460px;
-}
-
-.a_skill_c .article_skill_image {
-    width: 100%;
-    height: 200px;
-}
-
-.a_skill_c .article_skill_image img {
-    width: 350px;
-    height: 200px;
-    object-fit: fill;
-}
-
-.article_skill_image img.shadow {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.skill_id_c {
-    z-index: 1;
-    position: absolute;
-    top: 161px;
-    height: 70px;
-    width: 100%;
-}
-
-.skill_id_photo_c {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #ffd200;
-    margin: 0px 6px 0px 6%;
-    float: left;
-}
-
-.skill_id_photo_c .skill_id_photo {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 55%;
-}
-
-.skill_id_photo.plumbing {
-    background-image: url(../images/tap@3x.png);
-}
-
-.skill_id_photo.electrician {
-    background-image: url(../images/light@3x.png);
-}
-
-.skill_id_photo.mechanic {
-    background-image: url(../images/wrench@3x.png);
-}
-
-.skill_availability_c {
-    margin: 10px 0px;
-    width: 100%;
-    height: 29px;
-}
-
-.skill_availability {
-    margin-left: auto;
-    padding: 0.4rem 0px;
-    max-width: 35%;
-    border-radius: 15px 0% 0% 15px;
-}
-
-.skill_available {
-    background-color: #33a62b;
-}
-
-.skill_suspended {
-    background-color: #a60404;
-}
-
-.skill_pending {
-    background-color: #ffbb00;
-}
-
-.skill_availability p {
-    text-align: center;
-    color: white;
-}
-
-.skill_discription_c {
-    width: 100%;
-    height: 150px;
-    background-color: white;
-    margin: 4px 0px 12px 0px;
-    overflow: hidden;
-}
-
-.skill_discription {
-    height: 100%;
-    padding: 0px 15px 0px 0px;
-    margin: 0px 0px 0px 15px;
-    overflow: auto;
-}
-
-.skill_rating_c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    height: 45px;
-}
-
-.skill_rating_c ul {
-    padding: 0px;
-}
-
-.skill_rating_c .rating_number {
-    margin-left: 7px;
-    margin-top: 3px;
-}
 
 /*-------------media query------------*/
 
 /*width>=1260px*/
 
 @media all and (min-width: 1261px) {
-    #profil_header, section.s_skills_c {
+    #profil_header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -292,15 +173,9 @@ section.s_skills_c {
 /*1260px>=width*/
 
 @media all and (max-width:1260px) {
-    #profil_header, section.s_skills_c, .add_service {
+    #profil_header, .add_service {
         margin-left: 30px;
         margin-right: 30px;
-    }
-    .s_skills_c .a_skill_c {
-        width: 290px;
-    }
-    .a_skill_c .article_skill_image img {
-        width: 290px;
     }
 }
 
@@ -341,6 +216,7 @@ section.s_skills_c {
     #profil_header .profil_information_c {
         margin-top: 135px;
         flex-basis: 100%;
+        margin-right: unset;
     }
     #profil_header .profil_information_c .profil_user_name {
         top: 75px;
@@ -352,13 +228,17 @@ section.s_skills_c {
         text-align: center;
         padding-left: 0px;
         height: 160px;
+        margin-left: unset;
+        align-items: center;
     }
     #profil_header .profil_information_c>ul>li {
         flex: 1 1 33%;
         max-height: 75px;
-        width: 33.33%;
-        min-width: 33.33%;
+        width: calc(33% - 20px);
+        min-width: min-content;
         white-space: normal;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #profil_header .photo_id_c img {
         border-radius: 22px;
@@ -373,6 +253,7 @@ section.s_skills_c {
         transform: translateX(-50%);
         width: auto;
         min-width: auto;
+        margin-left: unset;
     }
     #profil_header .profil_description {
         max-width: 80%;
@@ -403,32 +284,6 @@ section.s_skills_c {
     #profil_header .profil_description {
         margin: 0px auto;
     }
-    /*----articles----*/
-    .s_skills_c .a_skill_c {
-        width: 215px;
-        height: 385px;
-    }
-    .a_skill_c .article_skill_image {
-        width: 215px;
-        height: 130px;
-    }
-    .a_skill_c .article_skill_image img {
-        width: 215px;
-        height: 130px;
-    }
-    .skill_id_photo_c {
-        width: 50px;
-        height: 50px;
-    }
-    .skill_id_c {
-        top: 95px;
-    }
-    .skill_id_c h3 {
-        font-size: 1rem;
-    }
-    .skill_id h4 {
-        font-size: 0.9rem;
-    }
 }
 
 /*320px>=width*/
@@ -441,11 +296,8 @@ section.s_skills_c {
         font-size: 1.2em;
         line-height: 1.4em;
     }
-    #profil_header, section.s_skills_c, .add_service {
+    #profil_header, .add_service {
         margin-left: 5px;
         margin-right: 5px;
-    }
-    .skill_id_c {
-        top: 102px;
     }
 }
