@@ -25,6 +25,7 @@
 
 .add_service p {
     overflow: hidden;
+    white-space: nowrap;
 }
 
 #profil_header_c {
@@ -151,7 +152,6 @@
     margin-right: 10%;
 }
 
-
 /*-------------media query------------*/
 
 /*width>=1260px*/
@@ -187,12 +187,12 @@
     .add_service {
         position: relative;
         top: 0px;
-        width: 92px;
+        width: 129px;
         font-size: 0.9rem;
-        padding: 6px 0px;
+        padding: 9px 0px;
         max-height: 40px;
         border-radius: 21px;
-        height: 47.2px;
+        height: unset;
     }
     /*----profil user header----*/
     #profil_header_c {
@@ -277,9 +277,8 @@
 
 @media all and (max-width:425px) {
     .add_service {
-        top: -20px;
+        top: -15px;
         margin-right: 10px;
-        padding: 7px 0px 0px 0px;
     }
     #profil_header .profil_description {
         margin: 0px auto;

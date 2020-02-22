@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-#main_header .nav_humburger_c {
+#main_header #nav_humburger_c {
     flex: 1 1 40px;
     min-width: 40px;
     max-width: 40px;
@@ -197,6 +197,114 @@
     border-bottom: 5px solid #383838;
 }
 
+/*-----------left_nav_bar--------------*/
+
+#left_nav_bar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    background-color: #383838;
+    z-index: 5;
+    display: none;
+}
+
+.left_nav_b_c {
+    margin: 10px auto;
+    width: 156px;
+    max-width: 156px;
+}
+
+.left_nav_search_c {
+    margin-top: 20px;
+    height: 31px;
+    border-radius: 30px;
+    background-color: #4c4c4c;
+    border: solid 1px #8f8f8f;
+    white-space: nowrap;
+}
+
+.left_nav_search_c span {
+    width: 10px;
+    line-height: 31px;
+    height: 100%;
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+}
+
+.left_nav_search_c span svg{
+    fill: white;
+    width: 10px;
+    height: 10px;
+}
+
+.left_nav_search_c input{
+    height: 100%;
+    line-height: 31px;
+    width: calc(100% - 29px);
+    border-radius: 30px;
+    background-color: #4c4c4c;
+    border: unset;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI';
+    color: white;
+    outline: unset;
+    display: inline-block;
+}
+
+.left_nav_search_c input::placeholder {
+    color: white;  
+}
+
+.left_nav_Add_Service_c {
+    height: 40px;
+    line-height: 35px;
+    background-color: #33a62b;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 27px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left_nav_Add_Service_c span:first-child{
+    font-size: 2rem;
+    margin-right: 2px;
+    vertical-align: top;
+}
+
+.left_nav_Add_Service_c span:last-child{
+    vertical-align: sub;
+}
+
+.left_nav_menu_c {
+    list-style-type: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.left_nav_menu_item {
+   line-height: 20px;   
+   margin: 20px 0px;
+}
+
+.left_nav_menu_item span:first-child {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.left_nav_menu_item span:first-child svg{
+    width: 12px;
+    height: 12px;
+    fill: white;
+}
+
 /*-------------media query------------*/
 
 @media all and (max-width:1024px) {
@@ -206,13 +314,19 @@
     #main_header_sub nav {
         justify-content: flex-start;
     }
+    #main_header #nav_humburger_c {
+        display: none;
+    }
+    #left_nav_bar {
+        display: none;
+    }
 }
 
 @media all and (max-width:768px) {
     #main_header .nav_list_c, #main_header .main_header_btn {
         display: none;
     }
-    #main_header .nav_humburger_c {
+    #main_header #nav_humburger_c {
         display: block;
     }
     #main_header .nav_logo_c {
@@ -278,4 +392,7 @@
         margin-left: 5px;
         margin-right: 5px;
     }
+    .left_nav_Add_Service_c {
+        font-size: 1.1rem;
+        }
 }
