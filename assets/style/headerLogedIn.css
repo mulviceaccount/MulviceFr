@@ -48,59 +48,52 @@
     margin-right: 30px;
 }
 
-#main_header .nav_login_in_c a, #main_header .nav_recipient_c a {
-    display: inline-block;
-    max-height: 34px;
-    padding: 17px 7.5px;
-}
-
 #main_header .nav_list_c a {
     max-height: 41.6px;
     padding: 20.8px 0px;
 }
 
-#main_header .nav_login_in_c {
-    background-color: #00bbff;
-    height: 100%;
-    width: 40px;
-    min-height: 60px;
-}
-
-#main_header .nav_login_in_c a {
-    margin: 0px auto;
-}
-
-#main_header .nav_login_in_c img {
-    width: 25px;
-    height: 25px;
-}
-
-#main_header .nav_recipient_c {
-    background-color: #ffd200;
-    height: 100%;
-    min-height: 60px;
-    width: 200px;
-}
-
-#main_header .nav_recipient_c a {
-    font-weight: bold;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-}
-
-#main_header .nav_recipient_c span {
-    display: inline-block;
-}
-
-#main_header .nav_recipient_c img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-.nav_list_c img, .nav_login_in_c span {
+.nav_list_c img {
     display: none;
+}
+
+#main_header .main_header_btns_c {
+    margin: 0px;
+}
+
+#main_header .main_header_btn {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0px 0px 0px 15px;
+    cursor: pointer;
+}
+
+#main_header .main_header_btn svg {
+    fill: #383838;
+    vertical-align: middle;
+    width: 25.3px;
+    height: 23.3px;
+    margin: 0 auto;
+}
+
+#main_header .main_header_btn.m_h_add {
+    background-color: #33a62b;
+}
+
+#main_header .main_header_btn.m_h_add svg {
+    width: 20px;
+    height: 20px;
+    ;
+    fill: white;
+}
+
+#main_header .main_header_btn.m_h_userPhoto img {
+    width: 100%;
+    height: 100%;
 }
 
 /*----------main_header_sub----------*/
@@ -114,44 +107,84 @@
     right: 0px;
     z-index: 5;
     box-shadow: 0 1.5px 5px 0 rgba(0, 0, 0, 0.4);
+    overflow: visible;
 }
 
-.main_header_btns_c {
-    margin: 0px;
-}
-
-.main_header_btn {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    background-color: #f0f0f0;
-    text-align: center;
-    margin: 0px 0px 0px 15px;
-    cursor: pointer;
-}
-
-.main_header_btn svg {
-    fill: #383838;
-    vertical-align: middle;
-    width: 25.3px;
-    height: 23.3px;
-    margin: 0 auto;
-}
-
-.main_header_btn.m_h_add {
-    background-color: #33a62b;
-}
-
-.main_header_btn.m_h_add svg{
-    width: 20px;
-    height: 20px;;
-    fill: white;
-}
-
-.main_header_btn.m_h_userPhoto img {
-    width: 100%;
+#main_header_sub nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    margin: 0px 30px;
+    font-size: 1.14rem;
+    position: relative;
+    overflow: visible;
+}
+
+#main_header_sub .m_h_s_list_c {
+    display: flex;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+#main_header_sub .m_h_s_list_item {
+    white-space: nowrap;
+    margin: 0px 20px 0px 0px;
+    line-height: 24px;
+}
+
+#main_header_sub .m_h_s_list_item span {
+    margin: 0px 5px 0px 0px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#main_header_sub .m_h_s_list_item p {
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: sub;
+}
+
+#main_header_sub .m_h_s_list_item svg {
+    fill: white;
+    width: 14px;
+    height: 17px;
+}
+
+#main_header_sub .m_h_s_mail_c {
+    white-space: nowrap;
+    margin-left: auto;
+    line-height: 24px;
+}
+
+#main_header_sub .m_h_s_mail_c span {
+    margin: 0px 5px 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 31px;
+    height: 31px;
+}
+
+#main_header_sub .m_h_s_mail_c img {
+    width: 31px;
+    height: 31px;
+}
+
+#main_header_sub .m_h_s_mail_c p {
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+#main_header_sub .arrow_up {
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    border-bottom: 5px solid #383838;
 }
 
 /*-------------media query------------*/
