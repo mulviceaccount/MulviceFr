@@ -24,6 +24,14 @@
     align-items: center;
 }
 
+#main_header .nav_humburger_c {
+    flex: 1 1 40px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 20px;
+    display: none;
+}
+
 #main_header .nav_logo_c {
     flex: 1;
     min-width: 130px;
@@ -57,11 +65,11 @@
     display: none;
 }
 
-#main_header .main_header_btns_c  {
+#main_header .main_header_btns_c {
     margin: 0px;
 }
 
-#main_header .main_header_btn, #m_h_userPhoto  {
+#main_header .main_header_btn, #m_h_userPhoto {
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -126,6 +134,7 @@
     display: flex;
     margin-right: 10px;
     list-style-type: none;
+    padding: 0px;
 }
 
 #main_header_sub .m_h_s_list_item {
@@ -190,15 +199,77 @@
 
 /*-------------media query------------*/
 
-@media all and (max-width:768px) {}
+@media all and (max-width:1024px) {
+    #main_header_sub .m_h_s_mail_c {
+        display: none;
+    }
+    #main_header_sub nav {
+        justify-content: flex-start;
+    }
+}
+
+@media all and (max-width:768px) {
+    #main_header .nav_list_c, #main_header .main_header_btn {
+        display: none;
+    }
+    #main_header .nav_humburger_c {
+        display: block;
+    }
+    #main_header .nav_logo_c {
+        margin: 0px auto;
+        width: fit-content;
+        min-width: fit-content;
+        flex: unset;
+    }
+    #main_header_sub {
+        background-color: #fff;
+        height: fit-content;
+        right: 0px;
+        left: unset;
+        width: fit-content;
+        border-radius: 0px 0px 15px 15px;
+        display: none;
+    }
+    #main_header_sub nav {
+        display: block;
+        margin: 0px;
+    }
+    #main_header_sub .arrow_up {
+        display: none;
+    }
+    #main_header_sub .m_h_s_list_c {
+        display: block;
+    }
+    #main_header_sub .m_h_s_list_item {
+        padding: 0px 0px 0px 10px;
+        margin: 10px 5px;
+    }
+    #main_header_sub .m_h_s_list_item p {
+        color: #383838;
+    }
+    #main_header_sub .m_h_s_list_item svg {
+        fill: #383838;
+    }
+}
 
 @media all and (max-width:425px) {
+    #main_header {
+        height: 55px;
+    }
     #main_header nav {
         margin-left: 10px;
         margin-right: 10px;
     }
-    #main_header {
-        height: 45px;
+    #main_header .nav_logo_c img {
+        width: 102px;
+        height: 32px;
+    }
+    #m_h_userPhoto {
+        width: 25px;
+        height: 25px;
+    }
+    #main_header_sub {
+        top: 55px;
     }
 }
 
