@@ -84,15 +84,6 @@
     vertical-align: middle;
 }
 
-.rating_star {
-    background: url(../images/star@2x.png) no-repeat 50% 50%;
-    background-size: 100%;
-}
-
-.rating_star.checked {
-    background-image: url(../images/starGold@3x.png);
-}
-
 .profil_user_name .connected_symbol {
     display: inline-block;
     margin-left: 2px;
