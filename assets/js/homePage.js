@@ -20,8 +20,6 @@ sMagElt.addEventListener('click', function() {
 
     }
 
-    console.log(getComputedStyle(sSimItm[0]).flexBasis);
-
     for (let i = 0; i < sSimItm.length; i++) {
         if (getComputedStyle(sSimItm[i]).flexBasis !== "54%") {
             if (searchState === "advanced") {
