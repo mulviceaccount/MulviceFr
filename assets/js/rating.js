@@ -1,3 +1,10 @@
+/*
+    we must add to the container of the stars that we want to be interactive the class "stars"
+    each star item must have the class 'rating_star'
+    we can have only 5 stars
+    this system is so basic, we should have visuel effects
+*/
+
 let ckecked = 3;//initial star checked
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +39,7 @@ function setNewRating(ev) {
     });
 
     if (doneAdding) {
+        checked = index;
         //do http request with the newRating variable
     }
 }
