@@ -35,11 +35,11 @@ function setNewRating(ev) {
         if (star == clickedStar) {
             doneAdding = true;
             newRating = index + 1;
+            checked = index;
         }
     });
 
     if (doneAdding) {
-        checked = index;
         //do http request with the newRating variable
     }
 }
