@@ -166,6 +166,13 @@ p {
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
 }
+.arrow_right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black;
+}
 
 .rating_star {
     background: url(../images/star@2x.png) no-repeat 50% 50%;
@@ -174,4 +181,27 @@ p {
 
 .rating_star.checked {
     background-image: url(../images/starGold@3x.png);
+}
+
+.connected_symbol {
+    display: inline-block;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+}
+
+.connected_symbol.connected {
+    background-color: #33e62b;
+}
+
+.connected_symbol.disconnected {
+    box-sizing: border-box;
+    border: grey solid 2px;
+    border-radius: 50%;
+}
+
+.none {
+    display: none;
 }
