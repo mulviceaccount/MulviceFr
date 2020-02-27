@@ -218,3 +218,7 @@ p {
 .none {
     display: none;
 }
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl {
+    overflow: visible;
+}
