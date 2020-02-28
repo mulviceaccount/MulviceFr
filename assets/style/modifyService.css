@@ -1,0 +1,426 @@
+#profil_main_container {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 250px;
+}
+
+#modify_service_top {
+    height: 122px;
+    line-height: 122px;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#modify_service_top h2 {
+    font-size: 2rem;
+    line-height: 40px;
+    flex: 1 1 auto;
+    width: calc(100% - 300px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0px 20px;
+    color: #383838;
+}
+
+#modify_service_top p {
+    width: fit-content;
+    height: fit-content;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 14px 60px;
+    color: white;
+    overflow: hidden;
+    line-height: 18px;
+    background-color: #a62b2b;
+    text-align: center;
+    margin: 0px 60px 0px auto;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#modify_service_top p svg {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 13px;
+    fill: white;
+}
+
+#modify_service_top p svg.arrow_left_icon {
+    left: 20px;
+    transform: translateY(-50%) rotate(180deg);
+    fill: #750f0f;
+}
+
+#modify_service_top p svg.arrow_right_icon {
+    right: 20px;
+    transform: translateY(-50%) rotate(0deg);
+}
+
+#f_main {
+    margin: 30px 25px;
+}
+
+.m_s_form_row {
+    margin: 30px 0px;
+}
+
+.flex.m_s_form_sub_row {
+    flex-wrap: wrap;
+}
+
+.flex.m_s_form_sub_row>div {
+    flex: 1 1 45%;
+    width: 45%;
+}
+
+.flex.m_s_form_sub_row>div:first-child {
+    margin-right: 15px;
+}
+
+.m_s_form_row>label, .m_s_form_sub_row label {
+    display: block;
+    font-size: 1.2rem;
+    color: #383838;
+    line-height: 24px;
+    margin: 0px 0px 10px 0px;
+}
+
+.m_s_form_row>small, .m_s_form_sub_row small {
+    color: #8f8f8f;
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+#f_main small.red {
+    color: #a62b2b;
+}
+
+#f_main input[type=select], #f_main input[type=text], #f_main textarea {
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2rem;
+    color: #383838;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 1px #dfdfdf;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI';
+    margin-bottom: 5px;
+}
+
+#f_main textarea {
+    padding: 10px;
+    height: 158px;
+    line-height: 27px;
+    resize: none;
+}
+
+#f_main .m_s_f_galery_c {
+    height: 400px;
+    position: relative;
+    border-radius: 17px;
+}
+
+#f_main .m_s_f_galery_btns_c {
+    height: 54px;
+    line-height: 54px;
+    background-color: #38383887;
+    align-items: center;
+    justify-content: center;
+}
+
+#f_main .m_s_f_galery_btns_c>div {
+    flex: 1 1 30%;
+    width: fit-content;
+    max-width: fit-content;
+    min-width: min-content;
+    text-align: center;
+    border: 1px solid #33a62b;
+    height: 33px;
+    line-height: 30px;
+    border-radius: 17px;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+#f_main .m_s_f_galery_btns_c>div:hover {
+    background-color: #33a62b54;
+}
+
+#f_main .m_s_f_galery_btns_c>div>p {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    max-width: 83%;
+    color: white;
+    cursor: pointer;
+}
+
+#f_main .m_s_f_galery_btns_c div>svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 14px;
+    height: 18px;
+    fill: white;
+}
+
+#f_main .m_s_f_galery_c>img {
+    position: absolute;
+    display: block;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#f_main .m_s_form_map {
+    height: 224px;
+    border-radius: 10px;
+}
+
+#f_main .m_s_f_requirements {
+    list-style-type: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    line-height: 27px;
+    border-radius: 10px;
+    border: solid 1px #a62b2b;
+    color: #a62b2b;
+    background-color: #fff3f3;
+}
+
+#f_main .m_s_f_requirements li>span {
+    margin-right: 5px;
+}
+
+#f_main .f_btns_c {
+    margin-left: auto;
+    width: fit-content;
+}
+
+#f_main .f_btns_c>a {
+    width: fit-content;
+    height: fit-content;
+    max-width: 200px;
+    box-sizing: border-box;
+    padding: 14px 60px;
+    color: white;
+    overflow: hidden;
+    line-height: 18px;
+    background-color: #33a62b;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.f_btns_c>a:first-child {
+    margin-right: 50px;
+}
+
+#f_main .f_btns_c>a.delete_btn {
+    background-color: unset;
+    border: 1px solid #a62b2b;
+    color: #a62b2b;
+}
+
+#f_main .planning_c {
+    padding: 50px 22px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: solid 1px #dfdfdf;
+}
+
+#f_main .planning_c>li {
+    flex: 1 1 auto;
+    margin: 0px 20px 30px 20px;
+    white-space: nowrap;
+    height: 60px;
+    max-height: 60px;
+    line-height: 60px;
+    min-width: fit-content;
+}
+
+#f_main .planning_c>li.planning_text {
+    max-height: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+#f_main .planning_c>li.planning_text p {
+    line-height: 24px;
+    color: #383838;
+    font-size: 1.2rem;
+    white-space: normal;
+    font-weight: normal;
+}
+
+#f_main .planning_c>li>p {
+    color: #383838;
+    line-height: 24px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: fit-content;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+#f_main .planning_t_c {
+    display: inline-block;
+    width: fit-content;
+    height: 60px;
+    vertical-align: middle;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#f_main .planning_t_c>div {
+    height: 30px;
+    line-height: 26px;
+}
+
+#f_main .planning_t_c>div>label {
+    width: 95px;
+    display: inline-block;
+    background-color: #383838;
+    vertical-align: middle;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+#f_main .planning_t_c>div label:first-child {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#f_main .planning_input_c {
+    border: 1px solid #dfdfdf;
+    border-left: 0;
+    display: inline-block;
+    width: fit-content;
+    vertical-align: middle;
+    height: 30px;
+    box-sizing: border-box;
+    padding-right: 5px;
+}
+
+#f_main .planning_input_c label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0px 5px;
+}
+
+#f_main .planning_input_c input {
+    border: unset;
+    outline: unset;
+}
+
+@media all and (max-width:768px) {
+    #profil_main_container {
+        margin-bottom: 750px;
+    }
+    #modify_service_top h2 {
+        font-size: 1.5rem;
+    }
+    #modify_service_top p {
+        padding: 14px 50px;
+        margin: 0px auto 18px auto;
+    }
+    #f_main .planning_c {
+        padding: 50px 0px;
+        display: block;
+    }
+    #f_main .planning_t_c {
+        width: calc(100% - 45px);
+    }
+    #f_main .planning_input_c {
+        width: calc(100% - 100px);
+    }
+    #f_main .planning_input_c input {
+        width: calc(50% - 29px);
+    }
+    #f_main .planning_c {
+        padding: 20px 0px;
+    }
+    #f_main .f_btns_c {
+        margin: 0 auto;
+    }
+    #modify_service_top {
+        flex-wrap: wrap;
+    }
+    #modify_service_top h2 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    #f_main textarea {
+        height: 100px;
+    }
+    #f_main .m_s_f_galery_c {
+        height: 280px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    #profil_main_container {
+        margin-top: 45px;
+    }
+    #f_main .m_s_f_galery_c {
+        height: 210px;
+    }
+    .flex.m_s_form_sub_row>div {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .flex.m_s_form_sub_row>div:first-child {
+        margin-right: unset;
+    }
+    #modify_service_top p {
+        padding: 8px 50px;
+        margin: 0px auto 5px auto;
+    }
+    #modify_service_top {
+        height: 90px;
+    }
+    #f_main .f_btns_c>a {
+        padding: 10px 25px;
+    }
+    .f_btns_c>a:first-child {
+        margin-right: 10px;
+    }
+    #f_main .planning_c>li {
+        margin: 0px 10px 30px 5px;
+    }
+    #f_main .planning_c>li>p {
+        font-size: 1rem;
+        margin-right: 2px;
+    }
+    #f_main .planning_t_c>div>label {
+        width: 70px;
+        padding-left: 8px;
+        font-size: 0.8rem; 
+    }
+    #f_main .planning_input_c {
+        width: calc(100% - 75px);
+    }
+    #f_main .planning_t_c {
+        width: calc(100% - 30px);
+    }
+}
+
+@media all and (max-width:320px) {
+    html {
+        font-size: 10px;
+    }
+}

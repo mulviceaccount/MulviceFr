@@ -96,6 +96,7 @@ ul {
 p {
     overflow: auto;
     max-height: 100%;
+    cursor: default;
 }
 
 .d_b {
@@ -221,4 +222,8 @@ p {
 
 .mapboxgl-ctrl-geocoder .mapboxgl-ctrl {
     overflow: visible;
+}
+
+.flex {
+    display: flex;
 }
