@@ -23,6 +23,11 @@
     color: #383838;
 }
 
+#modify_service_top.addService h2 {
+    flex: unset;
+    display: inline;
+}
+
 #modify_service_top p {
     width: fit-content;
     height: fit-content;
@@ -32,12 +37,28 @@
     color: white;
     overflow: hidden;
     line-height: 18px;
-    background-color: #a62b2b;
     text-align: center;
     margin: 0px 60px 0px auto;
     border-radius: 25px;
     font-size: 1.2rem;
     position: relative;
+    cursor: pointer;
+}
+
+#modify_service_top p.padding {
+    background-color: #a62b2b;
+}
+
+#modify_service_top p.active {
+    background-color: #33a62b;
+}
+
+#modify_service_top p.padding::before {
+    content: 'Pause';
+}
+
+#modify_service_top p.active::before {
+    content: 'Active';
 }
 
 #modify_service_top p svg {
@@ -48,10 +69,17 @@
     fill: white;
 }
 
+#modify_service_top p.padding svg.arrow_left_icon{
+    fill: #750f0f;
+}
+
+#modify_service_top p.active svg.arrow_right_icon{
+    fill: #750f0f;
+}
+
 #modify_service_top p svg.arrow_left_icon {
     left: 20px;
     transform: translateY(-50%) rotate(180deg);
-    fill: #750f0f;
 }
 
 #modify_service_top p svg.arrow_right_icon {
@@ -113,6 +141,14 @@
     margin-bottom: 5px;
 }
 
+#f_main input[type=select].white, #f_main input[type=text].white, #f_main textarea.white {
+    background-color: #fff;
+}
+
+#f_main input[type=select].white::placeholder, #f_main input[type=text].white::placeholder, #f_main textarea.white::placeholder{
+    color: #8f8f8f
+}
+
 #f_main textarea {
     padding: 10px;
     height: 158px;
@@ -126,15 +162,58 @@
     border-radius: 17px;
 }
 
+
+#f_main .m_s_f_galery_c > label{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: inline-block;
+}
+
+#f_main .m_s_f_galery_c .add_new_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#f_main .m_s_f_galery_c .add_new_img_btn_c {
+    margin: 0 auto;
+    width: 135px;
+    height: 135px;
+    line-height: 135px;
+    text-align: center;
+    background-color: #dfdfdf;
+    border-radius: 50%;
+}
+
+#f_main .m_s_f_galery_c .add_new_img_btn_c svg {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    fill: #ffffff;
+}
+
+#f_main .m_s_f_galery_c .add_new_img_text {
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #8f8f8f;
+}
+
+
 #f_main .m_s_f_galery_btns_c {
     height: 54px;
     line-height: 54px;
     background-color: #38383887;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
-#f_main .m_s_f_galery_btns_c>div {
+#f_main .m_s_f_galery_btns_c > label {
     flex: 1 1 30%;
     width: fit-content;
     max-width: fit-content;
@@ -148,11 +227,11 @@
     cursor: pointer;
 }
 
-#f_main .m_s_f_galery_btns_c>div:hover {
+#f_main .m_s_f_galery_btns_c>label:hover {
     background-color: #33a62b54;
 }
 
-#f_main .m_s_f_galery_btns_c>div>p {
+#f_main .m_s_f_galery_btns_c>label>p {
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
@@ -161,7 +240,7 @@
     cursor: pointer;
 }
 
-#f_main .m_s_f_galery_btns_c div>svg {
+#f_main .m_s_f_galery_btns_c label>svg {
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
@@ -325,13 +404,17 @@
 #f_main .planning_input_c input {
     border: unset;
     outline: unset;
+    min-width: fit-content;
 }
 
 @media all and (max-width:768px) {
     #profil_main_container {
         margin-bottom: 750px;
     }
-    #modify_service_top h2 {
+    #f_main {
+        margin: 30px 15px;
+    }
+    #modify_service_top.flex h2 {
         font-size: 1.5rem;
     }
     #modify_service_top p {
@@ -360,7 +443,7 @@
     #modify_service_top {
         flex-wrap: wrap;
     }
-    #modify_service_top h2 {
+    #modify_service_top.flex h2 {
         flex: 1 1 100%;
         text-align: center;
     }
@@ -393,6 +476,9 @@
     #modify_service_top {
         height: 90px;
     }
+    #modify_service_top.addService {
+        line-height: 90px;
+    }
     #f_main .f_btns_c>a {
         padding: 10px 25px;
     }
@@ -417,10 +503,22 @@
     #f_main .planning_t_c {
         width: calc(100% - 30px);
     }
+    #f_main input[type=select], #f_main input[type=text], #f_main textarea  {
+        height: 40px;
+    }
 }
 
 @media all and (max-width:320px) {
     html {
         font-size: 10px;
+    }
+    #modify_service_top.addService {
+        height: 60px;
+        line-height: 70px;
+    }
+    
+    #f_main .planning_t_c>div>label {
+        width: 65px;
+        font-size: 1rem;
     }
 }
