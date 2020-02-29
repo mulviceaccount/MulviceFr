@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/extra.css">
     <link rel="stylesheet" href="assets/style/beRecipientPage.css">
+    <link rel="stylesheet" href="assets/style/form.css">
     <title>mulvice prestataire</title>
 </head>
 
@@ -120,7 +121,8 @@
                         </div>
                     </div>
                     <h2 class="r_a_text_c right"><span class="yellow">Gagnez de l'argent</span> en aidant</h2>
-                    <p class="r_a_text_c right">Vous venez en aide à vos voisins qui ont besoin de petits services au quotidien. </p>
+                    <p class="r_a_text_c right">Vous venez en aide à vos voisins qui ont besoin de petits services au
+                        quotidien. </p>
                 </article>
 
                 <article class="free_with_mulvice">
@@ -136,9 +138,11 @@
                     </div>
                     <h2 class="r_a_text_c left"><span class="yellow">Quand</span> vous voulez, <span class="yellow">où
                         </span> vous voulez en aidant</h2>
-                    <p class="r_a_text_c left">Seulement disponible 4 heures cette semaine ? Pas envie d'aller bosser à l'autre bout de la ville ? </br>
+                    <p class="r_a_text_c left">Seulement disponible 4 heures cette semaine ? Pas envie d'aller bosser à
+                        l'autre bout de la ville ? </br>
                         </br>
-                        Vous choisissez vous-même les jobs dans votre coin. Nous proposons des dizaines de catégories de jobs différentes !
+                        Vous choisissez vous-même les jobs dans votre coin. Nous proposons des dizaines de catégories de
+                        jobs différentes !
                     </p>
                 </article>
 
@@ -156,7 +160,8 @@
                     <h2 class="r_a_text_c right"><span class="yellow">Partagez</span>,<span> échangez</span>,<span>
                             rencontrez</span></h2>
                     <p class="r_a_text_c right">
-                        <bold>Mulvice,</bold> c'est aussi une communauté avec de belles rencontres à la clé. Vous donnez un coup de main à un voisin et il vous en présente un autre. </br>
+                        <bold>Mulvice,</bold> c'est aussi une communauté avec de belles rencontres à la clé. Vous donnez
+                        un coup de main à un voisin et il vous en présente un autre. </br>
                         </br>
                         <bold>D'ici quelques semaines, vous les connaitrez tous !</bold>
                     </p>
@@ -277,17 +282,20 @@
                         <ul class="l_r_f l_no_b">
                             <li>
                                 <a href="#"><img src="assets/images/facebook-logo-button.png" srcset="assets/images/facebook-logo-button@2x.png 26w,
-                                            assets/images/facebook-logo-button@3x.png 36w" alt="facebook" class="footer_social_media">
+                                            assets/images/facebook-logo-button@3x.png 36w" alt="facebook"
+                                        class="footer_social_media">
                                 </a>
                             </li>
                             <li>
                                 <a href="#"><img src="assets/images/twitter-logo-button.png" srcset="assets/images/twitter-logo-button@2x.png 26w,
-                                        assets/images/twitter-logo-button@3x.png 36w" class="footer_social_media" alt="twitter">
+                                        assets/images/twitter-logo-button@3x.png 36w" class="footer_social_media"
+                                        alt="twitter">
                                 </a>
                             </li>
                             <li>
                                 <a href="#"><img src="assets/images/instagram.png" srcset="assets/images/instagram@2x.png 26w,
-                                            assets/images/instagram@3x.png 36w" class="footer_social_media" alt="instagram">
+                                            assets/images/instagram@3x.png 36w" class="footer_social_media"
+                                        alt="instagram">
                                 </a>
                             </li>
                         </ul>
@@ -296,6 +304,59 @@
             </div>
         </footer>
     </div>
-</body>
 
+    <div class="pop_up_bg" id="p_u_login">
+        <div class="pop_up">
+            <div class="pop_up_err_c">
+                <p><span class="dot"></span><b>Le mot de passe ne correspond pas dans les champs.</b></p>
+            </div>
+            <div class="pop_up_main">
+                <p class="pop_up_close_btn" id="p_u_login_close"><b>x</b></p>
+                <hr>
+                <p class="pop_up_title"><b>Devenir</b> Prestataire</p>
+                <form class="f_main" action="">
+                    <div class="m_s_form_row">
+                        <div class="flex m_s_form_sub_row">
+                            <div>
+                                <input type="text" placeholder="Prénom" class="white">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Nom" class="white">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_s_form_row">
+                        <div class="flex m_s_form_sub_row">
+                            <input type="email" placeholder="E-mail" class="white">
+                        </div>
+                    </div>
+                    <div class="m_s_form_row">
+                        <div class="flex m_s_form_sub_row">
+                            <div>
+                                <input type="password" placeholder="Mot de passe" class="white">
+                            </div>
+                            <div>
+                                <input type="password" placeholder="Confirmé le Mot de passe"
+                                    class="white">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pop_up_text">
+                        En cliquant sur <b>« S'inscrire »</b>, vous certifiez avoir plus de 16 ans
+                        et acceptez <a href="#">les conditions générales </a> ainsi que <a href="#">les conditions
+                            d'utilisation</a> de Stripe
+                    </p>
+                    <button type="submit" class="pop_up_btn">S'inscrire</button>
+                    
+                    <div class="pop_up_separator_or"><hr><p>ou</p></div>
+                    <a href="#" class="pop_up_btn facebook">S'inscrire Avec Facebook</a>
+                    <a href="#" class="pop_up_btn gmail">S'inscrire Avec gmail</a>
+                    <p class="pop_up_toggle_type_connexion">Déjà inscrit ? <a href="#">Connectez-vous</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/popUps.js"></script>
 </html>
