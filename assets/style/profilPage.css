@@ -75,6 +75,7 @@
 
 #profil_header .profil_information_c .profil_user_name h3 {
     white-space: nowrap;
+    font-weight: normal;
 }
 
 .li_icon {
@@ -84,23 +85,6 @@
     vertical-align: middle;
 }
 
-.profil_user_name .connected_symbol {
-    display: inline-block;
-    margin-left: 2px;
-    margin-bottom: 1px;
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 50%;
-}
-
-.connected_symbol.connected {
-    background-color: #33e62b;
-}
-
-.connected_symbol.disconnected {
-    border: grey solid 2px;
-    border-radius: 50%;
-}
 
 #profil_header .profil_information_c>ul {
     margin-top: 1rem;

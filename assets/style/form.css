@@ -1,0 +1,90 @@
+.f_main {
+    margin: 30px 25px;
+}
+
+.m_s_form_row {
+    margin: 30px 0px;
+}
+
+.flex.m_s_form_sub_row {
+    flex-wrap: wrap;
+}
+
+.flex.m_s_form_sub_row>div {
+    flex: 1 1 45%;
+    width: 45%;
+}
+
+.flex.m_s_form_sub_row>div:first-child {
+    margin-right: 15px;
+}
+
+.m_s_form_row>label, .m_s_form_sub_row label {
+    display: block;
+    font-size: 1.2rem;
+    color: #383838;
+    line-height: 24px;
+    margin: 0px 0px 10px 0px;
+}
+
+.m_s_form_row>small, .m_s_form_sub_row small {
+    color: #8f8f8f;
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+.f_main small.red {
+    color: #a62b2b;
+}
+
+.f_main input[type=select], .f_main input[type=text], .f_main input[type=password], .f_main input[type=email],  .f_main textarea {
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.2rem;
+    color: #383838;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 1px #dfdfdf;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI';
+    margin-bottom: 5px;
+}
+
+.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main textarea.white {
+    background-color: #fff;
+}
+
+.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .f_main textarea.white::placeholder {
+    color: #8f8f8f
+}
+
+.f_main textarea {
+    padding: 10px;
+    height: 158px;
+    line-height: 27px;
+    resize: none;
+}
+
+@media all and (max-width:768px) {
+    .f_main {
+        margin: 30px 15px;
+    }
+    .f_main textarea {
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .flex.m_s_form_sub_row>div {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .flex.m_s_form_sub_row>div:first-child {
+        margin-right: unset;
+    }
+    .f_main input[type=select], .f_main input[type=text], .f_main input[type=password], .f_main input[type=email], .f_main textarea {
+        height: 40px;
+    }
+}

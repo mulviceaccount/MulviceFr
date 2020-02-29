@@ -368,7 +368,7 @@
 
 @media all and (max-width:425px) {
     #main_header {
-        height: 55px;
+        height: 45px;
     }
     #main_header nav {
         margin-left: 10px;
