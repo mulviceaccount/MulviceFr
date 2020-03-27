@@ -69,11 +69,11 @@
     fill: white;
 }
 
-#modify_service_top p.padding svg.arrow_left_icon{
+#modify_service_top p.padding svg.arrow_left_icon {
     fill: #750f0f;
 }
 
-#modify_service_top p.active svg.arrow_right_icon{
+#modify_service_top p.active svg.arrow_right_icon {
     fill: #750f0f;
 }
 
@@ -93,8 +93,11 @@
     border-radius: 17px;
 }
 
+.f_main.p_inf .m_s_f_galery_c {
+    height: 165px;
+}
 
-.f_main .m_s_f_galery_c > label{
+.f_main .m_s_f_galery_c>label {
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
@@ -134,7 +137,6 @@
     color: #8f8f8f;
 }
 
-
 .f_main .m_s_f_galery_btns_c {
     height: 54px;
     line-height: 54px;
@@ -144,7 +146,21 @@
     display: none;
 }
 
-.f_main .m_s_f_galery_btns_c > label {
+.f_main.p_inf .m_s_f_galery_btns_c {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: unset;
+}
+
+.f_main.p_inf .m_s_f_galery_btns_c {
+    height: 100%;
+    line-height: 165px;
+}
+
+.f_main .m_s_f_galery_btns_c>label {
     flex: 1 1 30%;
     width: fit-content;
     max-width: fit-content;
@@ -158,8 +174,24 @@
     cursor: pointer;
 }
 
+.f_main.p_inf .m_s_f_galery_btns_c>label {
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    border: unset;
+    line-height: 165px;
+    padding: unset;
+    opacity: 0;
+}
+
 .f_main .m_s_f_galery_btns_c>label:hover {
     background-color: #33a62b54;
+}
+
+.f_main.p_inf .m_s_f_galery_btns_c>label:hover {
+    opacity: 1;
 }
 
 .f_main .m_s_f_galery_btns_c>label>p {
@@ -180,6 +212,11 @@
     fill: white;
 }
 
+.f_main.p_inf .m_s_f_galery_btns_c label>svg {
+    width: 32px;
+    height: 28px;
+}
+
 .f_main .m_s_f_galery_c>img {
     position: absolute;
     display: block;
@@ -191,6 +228,10 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.f_main.p_inf .m_s_f_galery_c>img {
+    z-index: 1;
 }
 
 .f_main .m_s_form_map {
@@ -218,6 +259,11 @@
     width: fit-content;
 }
 
+.f_main.p_inf .p_inf_btn {
+    margin: 0px auto;
+    width: fit-content;
+}
+
 .f_main .f_btns_c>a {
     width: fit-content;
     height: fit-content;
@@ -231,6 +277,16 @@
     text-align: center;
     border-radius: 25px;
     font-size: 1.2rem;
+}
+
+.f_main.p_inf .p_inf_btn>a {
+    border-radius: 10px;
+    background-color: #ffbb00;
+    color: #383838;
+    white-space: nowrap;
+    padding: 18px 42px;
+    max-width: unset;
+    font-weight: bold;
 }
 
 .f_btns_c>a:first-child {
@@ -259,6 +315,7 @@
     line-height: 60px;
     width: 326px;
     min-width: min-content;
+    flex: 1 1 auto;
 }
 
 .f_main .planning_c>li.planning_text {
@@ -337,6 +394,12 @@
     border: unset;
     outline: unset;
     min-width: fit-content;
+}
+
+@media all and (max-width:1020px) {
+    .f_main .planning_c>li {
+        display: block;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -430,7 +493,7 @@
     .f_main .planning_t_c>div>label {
         width: 70px;
         padding-left: 8px;
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
     .f_main .planning_input_c {
         width: calc(100% - 75px);
@@ -438,7 +501,7 @@
     .f_main .planning_t_c {
         width: calc(100% - 30px);
     }
-    .f_main input[type=select], .f_main input[type=text], .f_main textarea  {
+    .f_main input[type=select], .f_main input[type=text], .f_main textarea {
         height: 40px;
     }
 }
@@ -451,7 +514,6 @@
         height: 60px;
         line-height: 70px;
     }
-    
     .f_main .planning_t_c>div>label {
         width: 65px;
         font-size: 1rem;
