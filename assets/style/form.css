@@ -5,7 +5,7 @@
 .p_inf.f_main {
     margin: 130px auto;
     width: 70%;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 30px 20px 30px;
     border: 1px #f0f0f0 solid;
     border-radius: 10px;
 }
@@ -19,6 +19,11 @@
     margin: -65px auto 0px auto;
     height: 165px;
     border-radius: 50%;
+}
+
+.m_s_form_row.img_middle.inf {
+    width: 120px;
+    height: 120px;
 }
 
 .flex.m_s_form_sub_row {
@@ -48,11 +53,18 @@
     line-height: 24px;
 }
 
+.m_s_form_row>p{
+    font-size: 1.3rem;
+    color: #383838;
+    line-height: 25px;
+    margin: 10px 20px 20px 20px;
+}
+
 .f_main small.red {
     color: #a62b2b;
 }
 
-.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard,  .f_main textarea {
+.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard,  .f_main textarea {
     height: 60px;
     line-height: 60px;
     font-size: 1.2rem;
@@ -67,11 +79,11 @@
     margin-bottom: 5px;
 }
 
-.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=tel].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main input[type=number].standard.white, .f_main textarea.white {
+.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=tel].white, .f_main input[type=date].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main input[type=number].standard.white, .f_main textarea.white {
     background-color: #fff;
 }
 
-.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=tel].white::placeholder, .f_main input[type=tel], .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .f_main textarea.white::placeholder {
+.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=tel].white::placeholder, .f_main input[type=date].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .f_main textarea.white::placeholder {
     color: #8f8f8f
 }
 

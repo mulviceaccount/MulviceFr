@@ -126,6 +126,10 @@ p {
     color: #ffd200;
 }
 
+.bg-yellow {
+    background-color: #ffd200;
+}
+
 .grey {
     color: grey;
 }
