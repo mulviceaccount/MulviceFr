@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+ }
+ body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: SegoeUI, sans-serif;
+    align-items: center;
+ }
+    h1 {
+    color: #ffd200;
+    font-size: 250px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+ }
+ h2{
+   font-weight: 400;
+   text-transform : uppercase;
+    font-size: 90px;
+    margin: 0em;
+ }
+ p{
+    width: 464px;
+    font-size: 30px;
+    text-align: center;
+ }
+ button{
+    background-color:#33a62b;
+    color: white;
+    height: 53px;
+    width: 206px;
+    border-radius: 30px;
+    font-size: 18px;
+ }
+
+

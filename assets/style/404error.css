@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+ }
+ body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: SegoeUI, sans-serif;
+    align-items: center;
+ }
+    div {
+ }
+ img{
+    width: 400px;
+ }
+ h2{
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffd200;
+    text-transform : uppercase;
+    margin: 0em;
+    margin-bottom: 40px;
+    padding-right: 8px;
+ }
+
+ button{
+    background-color:#33a62b;
+    color: white;
+    height: 53px;
+    width: 206px;
+    border-radius: 30px;
+    font-size: 18px;
+ }
+
+
