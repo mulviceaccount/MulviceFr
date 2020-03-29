@@ -138,6 +138,14 @@ p {
     font-weight: normal;
 }
 
+.overflow_visible {
+    overflow: visible;
+}
+
+.pos_rel {
+    position: relative;
+}
+
 .marge_l_auto {
     /*margin left auto*/
     margin-left: auto;
@@ -229,6 +237,17 @@ p {
 .flex {
     display: flex;
 }
+
+i {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 8px;
+    height: 11px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
 
 .pop_up_bg {
     position: fixed;

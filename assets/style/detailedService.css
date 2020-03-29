@@ -568,9 +568,7 @@ div#d_s_m_box_2_3 {
 #d_s_m_box_2_4 .main_comment_owner_photo img, #d_s_m_box_2_4 .sub_main_comment_owner_photo img {
     width: 100%;
     height: 100%;
-    
 }
-
 
 #d_s_m_box_2_4 .main_comment_inf_text, #d_s_m_box_2_4 .sub_main_comment_inf_text {
     width: calc(100% - 100px);
@@ -610,6 +608,72 @@ div#d_s_m_box_2_3 {
     line-height: 21px;
     text-align: left;
     white-space: normal;
+    width: 80%;
+    max-width: calc(100% - 40px);
+    display: inline-block;
+}
+
+.modify_comment_c {
+    width: 20px;
+    float: right;
+    position: relative;
+    margin-top: -30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.modify_comment_c .dot {
+    width: 7px;
+    height: 7px;
+    background-color: #8f8f8f;
+    margin: 3px 0px;
+    display: block;
+    cursor: pointer;
+}
+
+#detailed_service_main i {
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+}
+
+i.edit {
+    background-image: url(../images/edit.svg);
+}
+
+i.delete {
+    background-image: url(../images/delete.svg);
+}
+
+i.downward {
+    background-image: url(../images/downward.svg);
+}
+
+#detailed_service_main .modify_comment_options_c {
+    /*display: none;*/
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    z-index: 1;
+}
+
+#detailed_service_main .modify_comment_options_c p {
+    text-align: left;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 5px 30px 5px 10px;
+}
+
+#detailed_service_main .modify_comment_options_c p:last-child {
+    border-bottom: 0;
+}
+
+#detailed_service_main .modify_comment_options_c p:hover {
+    background-color: #dfdfdf;
+    cursor: pointer;
 }
 
 /*sub comments*/
@@ -623,6 +687,7 @@ div#d_s_m_box_2_3 {
     border-radius: 10px;
     padding: 10px 10px 30px 10px;
     margin-bottom: 10px;
+    overflow: visible;
 }
 
 #d_s_m_box_2_4 .sub_main_comment_inf {
@@ -800,6 +865,13 @@ div#d_s_m_box_2_3 {
     #d_s_m_box_2_2 table tbody td {
         padding-left: 75px;
     }
+    /*comment modify options*/
+    .modify_comment_c {
+        margin-top: 0px;
+    }
+    #detailed_service_main .modify_comment_options_c {
+        top: 40px;
+    }
 }
 
 /*425px>=width*/
@@ -932,6 +1004,10 @@ div#d_s_m_box_2_3 {
     }
     #d_s_m_box_1_4 .box_1_4_2 {
         margin: 15px 10px;
+    }
+    .modify_comment_c .dot {
+        width: 4px;
+        height: 4px;
     }
 }
 
