@@ -340,9 +340,18 @@
                             <input type="text" class="white" id="gender_input" placeholder="Sexe" required>
                         </div>
                         <div>
-                            <label for="birth_date_input">Date de naissance : *</label>
-                            <input type="date" class="white" id="birth_date_input" placeholder="Date de naissance"
-                                required>
+                            <label for="day_input">Date de naissance : *</label>
+                            <div class="flex no_native_date_c">
+                                <select class="white" name="birth_day" id="birth_day" required>
+                                    <!--de 1 a 30 généré par js-->
+                                </select>
+                                <select class="white" name="birth_month" id="birth_month" required> 
+                                    <!--de 1 a 12 généré par js-->
+                                </select>
+                                <select class="white" name="birth_year" id="birth_year" required>
+                                    <!--de l'année actuel à l'année actuel moins 100ans généré par js-->
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -657,5 +666,5 @@
 <!--only if connected-->
 <script src="assets/js/leftNav.js"></script>
 <script src="assets/js/Service.js"></script>
-
+<script src="assets/js/noNativDate.js"></script>
 </html>

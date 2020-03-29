@@ -83,7 +83,7 @@
     color: #a62b2b;
 }
 
-.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard,  .f_main textarea {
+.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard, .no_native_date_c select,  .f_main textarea {
     height: 40px;
     line-height: 40px;
     font-size: 1.2rem;
@@ -98,12 +98,33 @@
     margin-bottom: 5px;
 }
 
-.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=tel].white, .f_main input[type=date].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main input[type=number].standard.white, .f_main textarea.white {
+.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=tel].white, .f_main input[type=date].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main input[type=number].standard.white, .no_native_date_c select.white, .f_main textarea.white {
     background-color: #fff;
 }
 
-.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=tel].white::placeholder, .f_main input[type=date].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .f_main textarea.white::placeholder {
+.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=tel].white::placeholder, .f_main input[type=date].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .no_native_date_c select.white::placeholder, .f_main textarea.white::placeholder {
     color: #8f8f8f
+}
+
+.no_native_date_c {
+    width: 100%;
+    min-width: 100%;
+}
+
+.no_native_date_c select{
+    width: unset;
+}
+
+.no_native_date_c select:nth-child(1){
+    flex: 1 1 30%;
+}
+
+.no_native_date_c select:nth-child(2){
+    flex: 1 1 30%;
+}
+
+.no_native_date_c select:nth-child(3){
+    flex: 1 1 40%;
 }
 
 .f_main textarea {
