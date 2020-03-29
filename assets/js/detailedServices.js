@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let questionsToggleElt = document.querySelector("#d_s_m_box_2_4 .box_2_4_1  ");
     let questionsCElt = document.querySelector("#d_s_m_box_2_4 .box_2_4_2");
 
+    let commentModifyToggleElts = document.getElementsByClassName('modify_comment_c');
+
     evaluationDisplay = getComputedStyle(evaluationCElt).display;
     contactUsDisplay = getComputedStyle(contactUsCElt).display;
     socialMediaDisplay = getComputedStyle(socialMediaCElt).display;
@@ -45,6 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     questionsToggleElt.addEventListener('click', () => {
         setToggleToElt(questionsCElt, questionsDisplay);
     });
+
+    for (let index = 0; index < commentModifyToggleElts.length; index++) {
+        document.addEventListener('click', (e)=> {
+            let commentModifyElts = commentModifyToggleElts[index].parentElement.getElementsByClassName('modify_comment_options_c')[0];
+            commentModifyElts.style.display = 'none';
+        });
+        commentModifyToggleElts[index].addEventListener('click', (event)=> {
+            event.stopPropagation();
+            let commentModifyElts = commentModifyToggleElts[index].parentElement.getElementsByClassName('modify_comment_options_c')[0];
+            setToggleToElt(commentModifyElts, 'block');
+        });
+    }
 
     let additionalServicesToggleElt = document.querySelector("#d_s_m_box_2_1 .box_2_1_2");
     additionalServicesToggleElt.addEventListener('click', () => {

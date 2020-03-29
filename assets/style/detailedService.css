@@ -650,7 +650,7 @@ i.downward {
 }
 
 #detailed_service_main .modify_comment_options_c {
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 20px;
     right: 10px;
