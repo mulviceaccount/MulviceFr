@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let questionsCElt = document.querySelector("#d_s_m_box_2_4 .box_2_4_2");
 
     let commentModifyToggleElts = document.getElementsByClassName('modify_comment_c');
+    let commentModifyEltsList = document.getElementsByClassName('modify_comment_options_c');
 
     evaluationDisplay = getComputedStyle(evaluationCElt).display;
     contactUsDisplay = getComputedStyle(contactUsCElt).display;
@@ -49,14 +50,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     for (let index = 0; index < commentModifyToggleElts.length; index++) {
-        document.addEventListener('click', (e)=> {
+        document.addEventListener('click', (e) => {
             let commentModifyElts = commentModifyToggleElts[index].parentElement.getElementsByClassName('modify_comment_options_c')[0];
             commentModifyElts.style.display = 'none';
         });
-        commentModifyToggleElts[index].addEventListener('click', (event)=> {
+        commentModifyToggleElts[index].addEventListener('click', (event) => {
             event.stopPropagation();
             let commentModifyElts = commentModifyToggleElts[index].parentElement.getElementsByClassName('modify_comment_options_c')[0];
             setToggleToElt(commentModifyElts, 'block');
+        });
+        //when click in comment menu item
+        let editElt = commentModifyEltsList[index].parentElement.getElementsByClassName('edit_comment')[0];
+        let deleteElt = commentModifyEltsList[index].parentElement.getElementsByClassName('delete_comment')[0];
+        let replyElt = commentModifyEltsList[index].parentElement.getElementsByClassName('reply_comment')[0];
+        //when click in edit comment menu item
+        editElt.addEventListener('click', () => {
+            //hide the comment paragraph
+            let commentParagraph = commentModifyEltsList[index].parentElement.getElementsByClassName('comment_item')[0];
+            commentParagraph.style.display = "none";
+            //show an input to replace the paragraph for edit
+            let input = commentModifyEltsList[index].parentElement.getElementsByClassName('comment_item_input')[0];
+            input.style.display = "block";
+            input.value = commentParagraph.textContent.replace(/  +/g, ' ');
+            input.focus();
+            input.setSelectionRange(0, input.value.length);
+            //display the reply submit btn
+            let replyBtn = commentModifyEltsList[index].parentElement.getElementsByClassName('change_reply_btn')[0];
+            replyBtn.style.display = 'block';
+        });
+        //when delete in edit comment menu item
+        deleteElt.addEventListener('click', () => {
+
+        });
+        //when reply in edit comment menu item
+        replyElt.addEventListener('click', () => {
+
         });
     }
 
@@ -86,11 +114,11 @@ function additionalServicestoggle(state) {
     let display = (window.innerWidth > 425) ? 'flex' : 'block';
     let margin = (window.innerWidth <= 320) ? "0px 5px 10px 5px" : '10px';
     let textLineHeight = (window.innerWidth <= 320) ? "20px" : '27px';
-    
+
     additionalServicesCAllElt.style.height = (state) ? height : '300px';
     additionalServicesCAllElt.style.lineHeight = (state) ? height : '300px';
     additionalServiceschildElt.style.display = (state) ? display : 'block';
     additionalServicesTitleElt.style.margin = (state) ? '0px' : margin;
     additionalServicesCElt.style.display = (state) ? display : 'block';
-    additionalServicesTextElts.forEach((elt)=> elt.style.lineHeight = (state) ? '27px' : textLineHeight);
+    additionalServicesTextElts.forEach((elt) => elt.style.lineHeight = (state) ? '27px' : textLineHeight);
 }
