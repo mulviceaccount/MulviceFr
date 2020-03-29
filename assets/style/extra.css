@@ -387,6 +387,10 @@ p {
     color: #ffbb00;
 }
 
+.center {
+    text-align: center;
+}
+
 @media all and (max-width: 1024px) {
     .pop_up_bg .f_main {
         margin: 20px 20px 0px 20px;
