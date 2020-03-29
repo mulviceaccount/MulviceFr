@@ -19,9 +19,9 @@
 }
 
 .m_s_form_row.img_middle {
-    width: 165px;
-    margin: -65px auto 0px auto;
-    height: 165px;
+    width: 120px;
+    margin: -65px auto 57px auto;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -84,8 +84,8 @@
 }
 
 .f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard,  .f_main textarea {
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     font-size: 1.2rem;
     color: #383838;
     width: 100%;
