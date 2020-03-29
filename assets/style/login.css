@@ -163,8 +163,46 @@
     margin: 25px 0px;
 }
 
-.log_c.log_toggle_type_connexion a{
+.log_c .log_toggle_type_connexion a{
     color: #ffbb00;
+}
+
+.log_c .log_in_opt_c {
+    flex-wrap: wrap;
+}
+
+.log_toggle_type_connexion.log_in {
+    text-align: left;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.log_toggle_type_connexion.log_in.forgot_password {
+    margin-right: unset;
+}
+
+.log_toggle_type_connexion.log_in.forgot_password a {
+    color: #383838;
+    text-decoration: underline;
+}
+
+.log_c .m_s_form_row.log_hold_connexion_c{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.log_c .log_hold_connexion_c  label {
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: #383838;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+
+.log_c .log_hold_connexion_c  input[type='checkbox'] {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
 }
 
 @media all and (max-width: 1024px) {
@@ -180,12 +218,18 @@
     }
 }
 
+@media all and (max-width: 768px) {
+    .log_c {
+        margin: -200px auto 500px auto;
+    }
+}
+
 @media all and (max-width: 425px) {
-    .log_c.log_title {
+    .log_c .log_title {
         margin-left: 25px;
         font-size: 1.4rem;
     }
-    .log_c.log_text {
+    .log_c .log_text {
         font-size: 1.1rem;
     }
      /*----header----*/
@@ -204,14 +248,11 @@
 }
 
 @media all and (max-width: 320px) {
-    .log_c.log_title {
+    .log_c .log_title {
         margin-left: 25px;
         font-size: 1.8rem;
     }
-    .log_close_btn {
-        margin-bottom: 7px;
-    }
-    .log_c.log_text {
+    .log_c .log_text {
         margin-top: -15px;
     }
 }
