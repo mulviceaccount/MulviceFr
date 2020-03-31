@@ -47,6 +47,18 @@ body a:-webkit-any-link {
 * {
     padding: 0px;
     margin: 0px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 html, body {
@@ -248,7 +260,6 @@ i {
     margin-left: 5px;
 }
 
-
 .pop_up_bg {
     position: fixed;
     top: 0px;
@@ -283,7 +294,7 @@ i {
     padding: 0px 45px;
 }
 
-.pop_up_err_c p{
+.pop_up_err_c p {
     line-height: 24px;
     padding: 8px 0px;
 }
@@ -298,7 +309,7 @@ i {
     line-height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
-    display: inline-block; 
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -344,7 +355,8 @@ i {
 .pop_up .pop_up_text b {
     color: #ffbb00;
 }
-.pop_up .pop_up_text a{
+
+.pop_up .pop_up_text a {
     font-weight: bold;
     text-decoration: underline;
 }
@@ -382,7 +394,7 @@ i {
     overflow: visible;
 }
 
-.pop_up_separator_or p{
+.pop_up_separator_or p {
     font-size: 1.4rem;
     line-height: 27px;
     position: relative;
@@ -402,7 +414,7 @@ i {
     margin: 25px 0px;
 }
 
-.pop_up .pop_up_toggle_type_connexion a{
+.pop_up .pop_up_toggle_type_connexion a {
     color: #ffbb00;
 }
 
@@ -417,7 +429,6 @@ i {
     .pop_up .m_s_form_row {
         margin: 10px 0px;
     }
-
     .pop_up .flex.m_s_form_sub_row>div {
         margin-bottom: 10px;
     }
