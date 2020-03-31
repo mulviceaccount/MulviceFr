@@ -282,7 +282,7 @@
             </div>
             <form class="f_main p_inf no_border" action="">
 
-                <div class="m_s_form_row svg_middle">
+                <div class="m_s_form_row svg_middle renitpconf" style="display: none;">
                     <svg xmlns="http://www.w3.org/2000/svg" id="prefix__tick" width="94" height="94"
                         viewBox="0 0 94 94">
                         <defs>
@@ -309,12 +309,23 @@
                         </g>
                     </svg>
                 </div>
-                <div class="m_s_form_row">
+                <div class="m_s_form_row renitpconf" style="display: none;">
                     <h2 class="center">E-mail de réinitialisation de mot de passe envoyé</h2>
                 </div>
-                <div class="m_s_form_row">
+                <div class="m_s_form_row renitpconf" style="display: none;">
                     <p class="center">Un e-amil a été envoé a votre adresse youcef.saidani@gmail.com.
                         Suivez Les instructions fournies pour réinitialiser votre mot de passe.</p>
+                </div>
+                <div class="m_s_form_row">
+                    <div>
+                        <label for="mail">Votre adresse e-mail : *</label>
+                        <input type="email" class="white" id="mail" required>
+                    </div>
+                </div>
+                <div class="m_s_form_row f_btns_c">
+                    <a class="f_btns_submit" href="#">
+                        Envoyer
+                    </a>
                 </div>
             </form>
         </div>
@@ -612,6 +623,6 @@
 <script src="assets/js/MainHeaderC.js"></script>
 <!--only if connected-->
 <script src="assets/js/leftNav.js"></script>
-<script src="assets/js/Service.js"></script>
+<script src="assets/js/recoverAccount.js"></script>
 
 </html>
