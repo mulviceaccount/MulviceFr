@@ -578,7 +578,7 @@
                             <p>Modifier <b>le Service</b></p>
                         </a>
                     </div>
-                    <div id="d_s_m_box_2_4">
+                    <div id="d_s_m_box_2_4" class="overflow_visible ">
                         <div class="box_2_4_1 cursor_btn">
                             <p class="arrow_icon_c"><b>Questions / Réponses </b>
                                 <svg class="arrow_up_icon" xmlns="http://www.w3.org/2000/svg"
@@ -592,7 +592,7 @@
                                 </svg>
                             </p>
                         </div>
-                        <div class="box_2_4_2">
+                        <div class="box_2_4_2 overflow_visible">
                             <div class="box_2_4_2_1">
                                 <div class="box_2_4_2_1_1">
                                     <textarea name="" id="" draggable="false"
@@ -602,7 +602,7 @@
                                     <p><b>Envoyer</b></p>
                                 </div>
                             </div>
-                            <div class="box_2_4_2_2">
+                            <div class="box_2_4_2_2 overflow_visible">
                                 <ul class="main_comments_c">
                                     <li class="main_comments_items">
                                         <div class="main_comment_inf">
@@ -639,7 +639,7 @@
                                                 chehal
                                                 tahsebli le montage ta3houm ?
                                             </p>
-                                            <input class="comment_item_input" type="text">
+                                            <textarea class="comment_item_input"></textarea>
                                             <div class="modify_comment_c">
                                                 <p class="dot"></p>
                                                 <p class="dot"></p>
@@ -651,7 +651,8 @@
                                                 <p class="reply_comment"><span><i class="downward"></i></span> Répondre</p>
                                             </div>
                                             <div class="change_reply_btn cursor_btn">
-                                                <p><b>Répondre</b></p>
+                                                <p class="change_reply_btn_cancel"><b>Annuler</b></p>
+                                                <p class="change_reply_btn_submit"><b>Répondre</b></p>
                                             </div>
                                         </div>
                                         <ul class="sub_main_comments_c">
@@ -695,7 +696,7 @@
                                                             fe
                                                             privi
                                                         </p>
-                                                        <input class="comment_item_input" type="text">
+                                                        <textarea class="comment_item_input" type="text"></textarea>
                                                         <div class="modify_comment_c">
                                                             <p class="dot"></p>
                                                             <p class="dot"></p>
@@ -707,19 +708,20 @@
                                                             <p class="reply_comment"><span><i class="downward"></i></span> Répondre</p>
                                                         </div>
                                                         <div class="change_reply_btn cursor_btn">
-                                                            <p><b>Répondre</b></p>
+                                                            <p class="change_reply_btn_cancel"><b>Annuler</b></p>
+                                                            <p class="change_reply_btn_submit"><b>Répondre</b></p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="sub_main_comment_reply_c">
-                                                    <textarea name="" id=""
-                                                        placeholder="Répondre au commentaire"></textarea>
-                                                    <div class="sub_menu_reply_btn cursor_btn">
-                                                        <p><b>Répondre</b></p>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
+                                        <div class="sub_main_comment_reply_c">
+                                            <textarea class="sub_main_comment_reply" name="" id=""
+                                                placeholder="Répondre au commentaire"></textarea>
+                                            <div class="sub_menu_reply_btn cursor_btn">
+                                                <p><b>Répondre</b></p>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

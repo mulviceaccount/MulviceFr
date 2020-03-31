@@ -546,7 +546,14 @@ div#d_s_m_box_2_3 {
 #d_s_m_box_2_4 .change_reply_btn p {
     padding: 10px 20px;
     line-height: 20px;
+    margin: 0px 10px;
 }
+
+#d_s_m_box_2_4 .change_reply_btn p.change_reply_btn_cancel {
+    background-color: white;
+    color: #383838;
+    border: 1px solid #383838;
+} 
 
 #d_s_m_box_2_4 .main_comments_c, #d_s_m_box_2_4 .sub_main_comments_c {
     list-style-type: none;
@@ -615,7 +622,7 @@ div#d_s_m_box_2_3 {
     font-size: 1rem;
 }
 
-#d_s_m_box_2_4 .main_comment, #d_s_m_box_2_4 .sub_main_comment, #d_s_m_box_2_4 .comment_item_input {
+#d_s_m_box_2_4 .main_comment, #d_s_m_box_2_4 .sub_main_comment, #d_s_m_box_2_4 textarea.comment_item_input {
     font-size: 1.14rem;
     line-height: 21px;
     text-align: left;
@@ -625,8 +632,11 @@ div#d_s_m_box_2_3 {
     display: inline-block;
 }
 
-#d_s_m_box_2_4 .comment_item_input {
+#d_s_m_box_2_4 textarea.comment_item_input {
     display: none;
+    height: fit-content;
+    min-height: 100px;
+    max-height: 200px;
 }
 
 .modify_comment_c {
@@ -738,6 +748,7 @@ i.downward {
 
 #d_s_m_box_2_4 .sub_main_comment_reply_c {
     width: 80%;
+    display: none;
 }
 
 #d_s_m_box_2_4 .sub_main_comment_reply_c textarea {
