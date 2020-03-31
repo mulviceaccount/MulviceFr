@@ -1,0 +1,258 @@
+#profil_main_container {
+    margin-top: 60px;
+    margin-bottom: 250px;
+}
+
+#large_header_be_recipient {
+    height: 395px;
+}
+
+#header_be_recipient_c {
+    position: relative;
+}
+
+#header_be_recipient_c>div {
+    height: 395px;
+}
+
+.header_r_image_c img {
+    display: block;
+    object-fit: cover;
+    height: 395px;
+    width: 100%;
+}
+
+/* login */
+
+.log_c {
+    margin: -200px auto 100px auto;
+    width: 80%;
+    overflow: visible;
+    position: relative;
+}
+
+.log_c>div {
+    border-radius: 30px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+}
+
+.err_c {
+    background-color: #ec0f0f;
+    color: white;
+    line-height: 32px;
+    margin-bottom: 15px;
+    padding: 0px 45px;
+}
+
+.err_c p{
+    line-height: 24px;
+    padding: 8px 0px;
+}
+
+.log_main {
+    background-color: #fff;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+.log_top_white_space {
+    font-size: 2rem;
+    line-height: 23px;
+    overflow: hidden;
+    margin: 10px 20px 20px auto;
+    width: fit-content;
+}
+
+.log_c hr {
+    border-top: #dfdfdf 1px solid;
+}
+
+.log_c .f_main {
+    margin: 0px 45px;
+}
+
+.log_c .log_title {
+    margin-left: 45px;
+    margin-bottom: -20px;
+    font-size: 1.7rem;
+    position: relative;
+    top: -20px;
+    line-height: 33px;
+    width: fit-content;
+    background-color: white;
+    padding: 0px 5px;
+    color: #383838;
+}
+
+.log_c .log_title b {
+    color: #ffbb00;
+}
+
+.log_c .log_text {
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: #383838;
+}
+
+.log_c .log_text b {
+    color: #ffbb00;
+}
+.log_c .log_text a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.log_btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1.14rem;
+    line-height: 21px;
+    padding: 15px;
+    background-color: #ffbb00;
+    box-shadow: unset;
+    border: unset;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.log_btn.facebook {
+    background-color: #4267b2;
+    color: white;
+    margin: 5px 0px;
+}
+
+.log_btn.gmail {
+    background-color: #ea4335;
+    color: white;
+    margin: 5px 0px;
+}
+
+.log_separator_or {
+    text-align: center;
+    overflow: visible;
+}
+
+.log_separator_or p{
+    font-size: 1.4rem;
+    line-height: 27px;
+    position: relative;
+    top: -15px;
+    padding: 0px 10px;
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.log_toggle_type_connexion {
+    text-align: center;
+    line-height: 27px;
+    font-size: 1.4rem;
+    color: #383838;
+    font-weight: bold;
+    margin: 25px 0px;
+}
+
+.log_c .log_toggle_type_connexion a{
+    color: #ffbb00;
+}
+
+.log_c .log_in_opt_c {
+    flex-wrap: wrap;
+}
+
+.log_toggle_type_connexion.log_in {
+    text-align: left;
+    width: fit-content;
+    margin-right: auto;
+}
+
+.log_toggle_type_connexion.log_in.forgot_password {
+    margin-right: unset;
+}
+
+.log_toggle_type_connexion.log_in.forgot_password a {
+    color: #383838;
+    text-decoration: underline;
+}
+
+.log_c .m_s_form_row.log_hold_connexion_c{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.log_c .log_hold_connexion_c  label {
+    font-size: 1.4rem;
+    line-height: 27px;
+    color: #383838;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+
+.log_c .log_hold_connexion_c  input[type='checkbox'] {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+@media all and (max-width: 1024px) {
+    .log_c .f_main {
+        margin: 20px 20px 0px 20px;
+    }
+    .log_c .m_s_form_row {
+        margin: 10px 0px;
+    }
+
+    .log_c .flex.m_s_form_sub_row>div {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .log_c {
+        margin: -200px auto 500px auto;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .log_c .log_title {
+        margin-left: 25px;
+        font-size: 1.4rem;
+    }
+    .log_c .log_text {
+        font-size: 1.1rem;
+    }
+     /*----header----*/
+     #profil_main_container {
+        margin-top: 45px;
+    }
+    .header_r_image_c img {
+        height: 205px;
+    }
+    #header_be_recipient_c>div {
+        height: 205px;
+    }
+    #large_header_be_recipient {
+        height: 205px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .log_c .log_title {
+        margin-left: 25px;
+        font-size: 1.8rem;
+    }
+    .log_c .log_text {
+        margin-top: -15px;
+    }
+}

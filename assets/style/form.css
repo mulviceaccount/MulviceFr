@@ -2,8 +2,40 @@
     margin: 30px 25px;
 }
 
+.p_inf.f_main {
+    margin: 130px auto;
+    width: 70%;
+    padding: 0px 30px 20px 30px;
+    border: 1px #f0f0f0 solid;
+    border-radius: 10px;
+}
+
+.p_inf.f_main.no_border {
+    border: unset;
+}
+
 .m_s_form_row {
     margin: 30px 0px;
+}
+
+.m_s_form_row.img_middle {
+    width: 120px;
+    margin: -65px auto 57px auto;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.m_s_form_row.svg_middle {
+    width: 94px;
+    margin: -65px auto 0px auto;
+    height: 94px;
+    padding: 5px;
+    background-color: white;
+}
+
+.m_s_form_row.img_middle.inf {
+    width: 120px;
+    height: 120px;
 }
 
 .flex.m_s_form_sub_row {
@@ -33,13 +65,27 @@
     line-height: 24px;
 }
 
+.m_s_form_row>p{
+    font-size: 1.3rem;
+    color: #383838;
+    line-height: 25px;
+    margin: 10px 20px 20px 20px;
+}
+
+.m_s_form_row>h2{
+    font-size: 2rem;
+    color: #383838;
+    line-height: 30px;
+    margin: 10px 20px 20px 20px;
+}
+
 .f_main small.red {
     color: #a62b2b;
 }
 
-.f_main input[type=select], .f_main input[type=text], .f_main input[type=password], .f_main input[type=email],  .f_main textarea {
-    height: 60px;
-    line-height: 60px;
+.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard, .no_native_date_c select,  .f_main textarea {
+    height: 40px;
+    line-height: 40px;
     font-size: 1.2rem;
     color: #383838;
     width: 100%;
@@ -52,12 +98,33 @@
     margin-bottom: 5px;
 }
 
-.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main textarea.white {
+.f_main input[type=select].white, .f_main input[type=text].white, .f_main input[type=tel].white, .f_main input[type=date].white, .f_main input[type=password].white, .f_main input[type=email].white, .f_main input[type=number].standard.white, .no_native_date_c select.white, .f_main textarea.white {
     background-color: #fff;
 }
 
-.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .f_main textarea.white::placeholder {
+.f_main input[type=select].white::placeholder, .f_main input[type=text].white::placeholder, .f_main input[type=tel].white::placeholder, .f_main input[type=date].white::placeholder, .f_main input[type=password].white::placeholder, .f_main input[type=email].white::placeholder, .no_native_date_c select.white::placeholder, .f_main textarea.white::placeholder {
     color: #8f8f8f
+}
+
+.no_native_date_c {
+    width: 100%;
+    min-width: 100%;
+}
+
+.no_native_date_c select{
+    width: unset;
+}
+
+.no_native_date_c select:nth-child(1){
+    flex: 1 1 30%;
+}
+
+.no_native_date_c select:nth-child(2){
+    flex: 1 1 30%;
+}
+
+.no_native_date_c select:nth-child(3){
+    flex: 1 1 40%;
 }
 
 .f_main textarea {
@@ -70,6 +137,10 @@
 @media all and (max-width:768px) {
     .f_main {
         margin: 30px 15px;
+    }
+    .p_inf.f_main {
+        margin: 100px 15px;
+        width: unset;
     }
     .f_main textarea {
         height: 100px;
