@@ -109,45 +109,59 @@
                                 <input type="text" name="s_location" id="s_location" placeholder="Location">
                             </div>
                             <div class="s_item s_simple s_category_c">
-                                <select class="s_select" name="s_category" id="s_category" form="">
-                                    <option value="0" disabled hidden selected>Catégorie</option>
-                                    <option value="0">Electricien</option>
-                                    <option value="1">Mécanicien Auto</option>
-                                    <option value="2">Plomberie Bàtiment</option>
-                                </select>
+                                <div class="select">
+                                    <ul class="select_list none">
+                                        <input type="text" name="s_category" id="s_category" class="none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">cat one</li>
+                                        <li role="option" value="2" class="option">cat two</li>
+                                        <li role="option" value="3" class="option">cat three</li>
+                                        <li role="option" value="4" class="option">cat foor</li>
+                                    </ul>
+                                    <p data-placeholder="Catégorie" class="select_output"></p>
+                                </div>
                             </div>
                             <div class="s_item s_advanced s_day_c">
-                                <select class="s_select" name="s_day" id="s_day" form="">
-                                    <option value="0" disabled hidden selected>jour</option>
-                                    <option value="0">Pas important</option>
-                                    <option value="1">dimanche</option>
-                                    <option value="2">lundi</option>
-                                    <option value="3">mardi</option>
-                                    <option value="4">mercredi</option>
-                                    <option value="5">jeudi</option>
-                                    <option value="6">vendredi</option>
-                                    <option value="7">samedi</option>
-                                </select>
+                                <div class="select">
+                                    <ul class="select_list none">
+                                        <input type="text" name="s_day" id="s_day" class="none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">dimanche</li>
+                                        <li role="option" value="2" class="option">lundi</li>
+                                        <li role="option" value="3" class="option">mardi</li>
+                                        <li role="option" value="4" class="option">mercredi</li>
+                                        <li role="option" value="5" class="option">jeudi</li>
+                                        <li role="option" value="6" class="option">vendredi</li>
+                                        <li role="option" value="7" class="option">samedi</li>
+                                    </ul>
+                                    <p data-placeholder="Jour du travail" class="select_output"></p>
+                                </div>
                             </div>
                             <div class="s_item s_advanced s_gender_c">
-                                <select class="s_select" name="s_gender" id="s_gender" form="">
-                                    <option value="0" selected disabled hidden>Sexe</option>
-                                    <option value="0">Pas important</option>
-                                    <option value="1">homme</option>
-                                    <option value="2">femme</option>
-                                </select>
+                                <div class="select">
+                                    <ul class="select_list none">
+                                        <input type="text" name="s_gender" id="s_gender" class="none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">Homme</li>
+                                        <li role="option" value="2" class="option">Femme</li>
+                                    </ul>
+                                    <p data-placeholder="Genre" class="select_output"></p>
+                                </div>
                             </div>
                             <div class="s_item s_advanced s_age_c">
-                                <select class="s_select" name="s_age" id="s_age" form="">
-                                    <option value="0" selected disabled hidden>âge</option>
-                                    <option value="0">Pas important</option>
-                                    <option value="1">De 18 à 25ans</option>
-                                    <option value="2">De 26 à 35ans</option>
-                                    <option value="3">De 36 à 45ans</option>
-                                    <option value="4">Plus de 45ans</option>
-                                </select>
+                                <div class="select">
+                                    <ul class="select_list none">
+                                        <input type="text" name="s_age" id="s_age" class="none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">De 18 à 25ans</li>
+                                        <li role="option" value="2" class="option">De 26 à 35ans</li>
+                                        <li role="option" value="2" class="option">De 36 à 45ans</li>
+                                        <li role="option" value="2" class="option">Plus de 45ans</li>
+                                    </ul>
+                                    <p data-placeholder="Age" class="select_output"></p>
+                                </div>
                             </div>
-                            <div class="s_button_c">
+                            <div id="submit_search" class="s_button_c">
                                 <div class="s_button">
                                     <img src="assets/images/magnifier.png" srcset="assets/images/magnifier.png 8w,
                                                 assets/images/magnifier@2x.png 16w,
