@@ -46,6 +46,7 @@
 .flex.m_s_form_sub_row>div {
     flex: 1 1 45%;
     width: 45%;
+    min-width: fit-content;
 }
 
 .flex.m_s_form_sub_row>div:first-child {
