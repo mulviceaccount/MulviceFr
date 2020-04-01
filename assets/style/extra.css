@@ -422,6 +422,71 @@ i {
     text-align: center;
 }
 
+/* select dropDown list */
+
+div.select {
+    overflow: visible;
+}
+
+.select ul {
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 24px;
+    max-height: 500px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+    z-index: 1;
+}
+
+.select ul .blankli {
+    height: 51px;
+}
+
+.select ul li.option {
+    width: 100%;
+    cursor: default;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.select .select_output {
+    display: block;
+    position: relative;
+    margin-left: unset;
+    padding-right: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.select .select_output {
+    color: #767676;
+}
+
+.select .select_output:empty::before {
+    content: attr(data-placeholder);
+}
+
+.select .select_output:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #dfdfdf;
+}
+
+.select ul li.option:hover {
+    background-color: #B8B8B8;
+}
+
 @media all and (max-width: 1024px) {
     .pop_up_bg .f_main {
         margin: 20px 20px 0px 20px;
