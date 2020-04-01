@@ -1,5 +1,6 @@
 .f_main {
-    margin: 30px 25px;
+    margin: 130px auto;
+    width: 70%;
 }
 
 .p_inf.f_main {
@@ -65,14 +66,14 @@
     line-height: 24px;
 }
 
-.m_s_form_row>p{
+.m_s_form_row>p {
     font-size: 1.3rem;
     color: #383838;
     line-height: 25px;
     margin: 10px 20px 20px 20px;
 }
 
-.m_s_form_row>h2{
+.m_s_form_row>h2 {
     font-size: 2rem;
     color: #383838;
     line-height: 30px;
@@ -83,7 +84,7 @@
     color: #a62b2b;
 }
 
-.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard, .no_native_date_c select,  .f_main textarea {
+.f_main input[type=select], .f_main input[type=text], .f_main input[type=tel], .f_main input[type=date], .f_main input[type=password], .f_main input[type=email], .f_main input[type=number].standard, .no_native_date_c select, .f_main textarea {
     height: 40px;
     line-height: 40px;
     font-size: 1.2rem;
@@ -111,19 +112,19 @@
     min-width: 100%;
 }
 
-.no_native_date_c select{
+.no_native_date_c select {
     width: unset;
 }
 
-.no_native_date_c select:nth-child(1){
+.no_native_date_c select:nth-child(1) {
     flex: 1 1 30%;
 }
 
-.no_native_date_c select:nth-child(2){
+.no_native_date_c select:nth-child(2) {
     flex: 1 1 30%;
 }
 
-.no_native_date_c select:nth-child(3){
+.no_native_date_c select:nth-child(3) {
     flex: 1 1 40%;
 }
 
@@ -136,7 +137,8 @@
 
 @media all and (max-width:768px) {
     .f_main {
-        margin: 30px 15px;
+        margin: 30px 30px;
+        width: unset;
     }
     .p_inf.f_main {
         margin: 100px 15px;
@@ -148,6 +150,9 @@
 }
 
 @media all and (max-width: 425px) {
+    .f_main {
+        margin: 30px 20px;
+    }
     .flex.m_s_form_sub_row>div {
         flex: 1 1 100%;
         width: 100%;
@@ -157,5 +162,11 @@
     }
     .f_main input[type=select], .f_main input[type=text], .f_main input[type=password], .f_main input[type=email], .f_main textarea {
         height: 40px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .f_main {
+        margin: 30px 10px;
     }
 }
