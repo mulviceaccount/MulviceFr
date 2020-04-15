@@ -94,7 +94,7 @@
 }
 
 .f_main.p_inf .m_s_f_galery_c {
-    height: 165px;
+    height: 120px;
 }
 
 .f_main .m_s_f_galery_c>label {
@@ -157,7 +157,7 @@
 
 .f_main.p_inf .m_s_f_galery_btns_c {
     height: 100%;
-    line-height: 165px;
+    line-height: 120px;
 }
 
 .f_main .m_s_f_galery_btns_c>label {
@@ -181,7 +181,7 @@
     min-width: 100%;
     height: 100%;
     border: unset;
-    line-height: 165px;
+    line-height: 120px;
     padding: unset;
     opacity: 0;
 }
@@ -384,6 +384,10 @@
     color: white;
 }
 
+.f_main .planning_t_c>div>label.planning_to::before {
+    content: "Apres Midi";
+}
+
 .f_main .planning_t_c>div label:first-child {
     border-bottom: 1px solid #dfdfdf;
 }
@@ -411,28 +415,9 @@
     min-width: fit-content;
 }
 
-@media all and (max-width:1020px) {
-    .f_main .planning_c>li {
-        display: block;
-    }
-}
-
-@media all and (max-width:768px) {
-    #profil_main_container {
-        margin-bottom: 750px;
-    }
-    .f_main {
-        margin: 30px 15px;
-    }
-    #modify_service_top.flex h2 {
-        font-size: 1.5rem;
-    }
-    #modify_service_top p {
-        padding: 14px 50px;
-        margin: 0px auto 18px auto;
-    }
+@media all and (max-width:1054px) {    
     .f_main .planning_c {
-        padding: 50px 0px;
+        padding: 20px 0px;
         display: block;
     }
     .f_main .planning_t_c {
@@ -444,8 +429,21 @@
     .f_main .planning_input_c input {
         width: calc(50% - 29px);
     }
-    .f_main .planning_c {
-        padding: 20px 0px;
+    .f_main .planning_c>li {
+        width: calc(100% - 40px);
+    }
+}
+
+@media all and (max-width:768px) {
+    #profil_main_container {
+        margin-bottom: 750px;
+    }
+    #modify_service_top.flex h2 {
+        font-size: 1.5rem;
+    }
+    #modify_service_top p {
+        padding: 14px 50px;
+        margin: 0px auto 18px auto;
     }
     .f_main .f_btns_c {
         margin: 0 auto;
@@ -463,9 +461,6 @@
     .f_main .m_s_f_galery_c {
         height: 280px;
     }
-    .f_main .planning_c>li {
-        width: calc(100% - 40px);
-    }
 }
 
 @media all and (max-width: 425px) {
@@ -474,6 +469,11 @@
     }
     .f_main .m_s_f_galery_c {
         height: 210px;
+    }
+    .f_main .m_s_f_galery_c .add_new_img_btn_c {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
     }
     .flex.m_s_form_sub_row>div {
         flex: 1 1 100%;
@@ -506,9 +506,9 @@
         margin-right: 2px;
     }
     .f_main .planning_t_c>div>label {
-        width: 70px;
+        width: 55px;
         padding-left: 8px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .f_main .planning_input_c {
         width: calc(100% - 75px);
@@ -518,6 +518,13 @@
     }
     .f_main input[type=select], .f_main input[type=text], .f_main textarea {
         height: 40px;
+    }
+    .f_main .planning_t_c>div>label.planning_to::before {
+        content: "A.midi";
+    }
+    .f_main .planning_c>li {
+        margin: 0px 10px 30px 10px;
+        width: calc(100% - 10px);
     }
 }
 
@@ -529,8 +536,14 @@
         height: 60px;
         line-height: 70px;
     }
+    .f_main .planning_t_c {
+        width: calc(100% - 20px);
+    }
+    .f_main .planning_c>li>p {
+        width: 23px;
+    }
     .f_main .planning_t_c>div>label {
-        width: 65px;
-        font-size: 1rem;
+        width: 55px;
+        font-size: 1.2rem;
     }
 }

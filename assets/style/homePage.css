@@ -1,8 +1,8 @@
 /*------main design------*/
 
 .li_icon {
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
     margin-right: 2px;
     vertical-align: middle;
 }
@@ -56,12 +56,14 @@
     background-color: #ffffff;
     border-radius: 25px;
     position: relative;
+    overflow: visible;
 }
 
 .search_up {
     height: 40px;
     border-bottom: black solid 0.1px;
     font-size: 1.7rem;
+    margin-bottom: -20px;
 }
 
 .search_up p {
@@ -79,16 +81,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 44px 10px;
+    margin: 44px 10px 0px 10px;
+    overflow: visible;
+    padding-bottom: 20px;
 }
 
 .search_items>div {
     margin: 10px;
-    height: 50px;
+    height: 40px;
 }
 
 .s_item {
-    border: black solid 1px;
+    border: #8f8f8f solid 1px;
     border-radius: 24px;
 }
 
@@ -120,6 +124,10 @@
     margin-left: 40px;
 }
 
+.s_item input.none {
+    display: none;
+}
+
 .s_item select {
     width: calc( 100% - 15px);
     height: 100%;
@@ -142,43 +150,51 @@ div.s_keyWord_c {
     background: url("../images/hashtag_grey.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
 }
 
 div.s_location_c {
     background: url("../images/location_grey.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
 }
 
 div.s_category_c {
     background: url("../images/list_grey.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
     padding-left: 40px;
+    overflow: visible;
+    position: relative;
 }
 
 div.s_day_c {
     background: url("../images/day.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
+    position: relative;
+    overflow: visible;
 }
 
 div.s_gender_c {
     background: url("../images/gender.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
+    position: relative;
+    overflow: visible;
 }
 
 div.s_age_c {
     background: url("../images/age.png") no-repeat;
     background-position-x: 15px;
     background-position-y: center;
-    background-size: 15px;
+    background-size: 11px;
+    position: relative;
+    overflow: visible;
 }
 
 .s_button {
@@ -193,6 +209,10 @@ div.s_age_c {
 
 .s_button img {
     margin-right: 10px;
+}
+
+.s_button p{
+    cursor: pointer;
 }
 
 #s_more_i {
