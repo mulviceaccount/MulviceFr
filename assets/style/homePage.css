@@ -57,6 +57,7 @@
     border-radius: 25px;
     position: relative;
     overflow: visible;
+    z-index: 2;
 }
 
 .search_up {

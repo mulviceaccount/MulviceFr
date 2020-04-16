@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let inputElt = node.getElementsByTagName('input')[0];
                 selectOutputElt.textContent = optionElts[index].textContent;
                 inputElt.value = optionElts[index].value;
+                console.log(inputElt.value);
                 selectOutputElt.style.color = '#000';
                 selectListElt.classList.toggle('none');
             }
@@ -96,10 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //click on search btn
-    let searchBtnElt = document.getElementById('submit_search');
-    searchBtnElt.addEventListener('click', () => {
-        searchCards();
-    });
+    // let searchBtnElt = document.getElementById('submit_search');
+    // searchBtnElt.addEventListener('click', () => {
+    //     searchCards();
+    // });
 
 });
 

@@ -522,3 +522,7 @@ div.select {
         margin-top: -15px;
     }
 }
+
+.mapboxgl-ctrl-attrib-inner , .mapboxgl-ctrl-bottom-left {
+    display: none;
+}

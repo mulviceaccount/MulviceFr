@@ -5,7 +5,7 @@
     this system is so basic, we should have visuel effects
 */
 
-let ckecked = 3;//initial star checked
+let ckecked = 0;//initial star checked
 
 document.addEventListener('DOMContentLoaded', () => {
     let stars = document.querySelectorAll('.stars .rating_star');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         star.addEventListener('click', setNewRating);
     });
 
-    checked = 3;//initial star checked
+    checked = 0;//initial star checked
     if (checked >= 0 && checked < 5)
         stars[ckecked - 1].dispatchEvent(new MouseEvent('click'));
 });
@@ -35,11 +35,30 @@ function setNewRating(ev) {
         if (star == clickedStar) {
             doneAdding = true;
             newRating = index + 1;
-            checked = index;
+            checked = index+1;
         }
     });
 
     if (doneAdding) {
         //do http request with the newRating variable
+         $.ajax({
+
+                        url : "/services/rate-service/",
+                        type : 'GET',
+                        data : {
+                            note :checked,
+                            service_id : service_id,
+                           
+                        } ,
+
+                        success : function(e){
+                        $('#note').html(e.new_note_moy);
+                        $('#nb_note').html(e.new_nb_note + " Avis");
+                        },
+                        error : function(xhr,errmsg,err)  {
+
+                        } 
+
+                });
     }
 }

@@ -50,33 +50,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //create a new comment
-    let mainCommentTextElt = document.querySelector('.box_2_4_2_1_1 textarea');
-    let mainCommentSubmitBtnElt = document.getElementsByClassName('box_2_4_2_1_2')[0]; 
+    // let mainCommentTextElt = document.querySelector('.box_2_4_2_1_1 textarea');
+    // let mainCommentSubmitBtnElt = document.getElementsByClassName('box_2_4_2_1_2')[0]; 
 
-    mainCommentSubmitBtnElt.addEventListener('click', function(e) {
-        e.preventDefault();
-        if (mainCommentTextElt.value != '') {
-            //do some ajex
-            //TODO: you can use promise to control if we create new comment or not 
-            createNewComment();
-        }
-        else {
-            //display msg err
-            let commentErrElt = document.createElement('small');
-            commentErrElt.style.color = 'red';
-            commentErrElt.textContent = "votre commentaire ne peut pas étre vide !";
-            mainCommentTextElt.parentElement.insertBefore(commentErrElt, mainCommentTextElt);
+    // mainCommentSubmitBtnElt.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     if (mainCommentTextElt.value != '') {
+    //         //do some ajex
+    //         //TODO: you can use promise to control if we create new comment or not 
+    //         createNewComment();
+    //     }
+    //     else {
+    //         //display msg err
+    //         let commentErrElt = document.createElement('small');
+    //         commentErrElt.style.color = 'red';
+    //         commentErrElt.textContent = "votre commentaire ne peut pas étre vide !";
+    //         mainCommentTextElt.parentElement.insertBefore(commentErrElt, mainCommentTextElt);
 
-            mainCommentTextElt.addEventListener('keydown', ()=> {
-                if(mainCommentTextElt.value == '') {
-                    commentErrElt.style.display = "block";
-                }
-                else {
-                    commentErrElt.style.display = "none";
-                }
-            });
-        }
-    });
+    //         mainCommentTextElt.addEventListener('keydown', ()=> {
+    //             if(mainCommentTextElt.value == '') {
+    //                 commentErrElt.style.display = "block";
+    //             }
+    //             else {
+    //                 commentErrElt.style.display = "none";
+    //             }
+    //         });
+    //     }
+    // });
     
 
     //for each comment menu toggle
@@ -145,7 +145,15 @@ function additionalServicestoggle(state) {
 })();
 
 function editComment(toggleElt) {
+    let parentElt = toggleElt.parentElement ;
+    if (parentElt == null){
+        return ;
+    } 
+    console.log(parentElt);
     let editElt = toggleElt.parentElement.getElementsByClassName('edit_comment')[0];
+    if (parentElt == null || editElt == null){
+        return ;
+    } 
     editElt.addEventListener('click', (e) => {
         e.stopPropagation();
         //escape change when another one is on
@@ -200,9 +208,16 @@ function editComment(toggleElt) {
 }
 
 function deleteComment(toggleElt) {
+    let parentElt = toggleElt.parentElement ;
+    if (parentElt == null){
+        return ;
+    } 
     if (commentIsInEditMode.state)
         return;
     let deleteElt = toggleElt.parentElement.getElementsByClassName('delete_comment')[0];
+    if (parentElt == null || deleteElt == null){
+        return ;
+    }
     deleteElt.addEventListener('click', (e) => {
         e.stopPropagation();
         //hide comment menu 
@@ -256,31 +271,31 @@ function replyComment(toggleElt) {
             textAreaElt.value = '';
             textAreaElt.focus();
             //reply btn submit
-            let replyBtnElt = node.getElementsByClassName('sub_menu_reply_btn')[0];
-            replyBtnElt.addEventListener('click', (ev) => {
-                ev.stopPropagation();
-                if (textAreaElt.value != '') {
-                    //do some ajex
-                    //TODO: you can use promise to control if we create new comment or not 
-                    createNewCommentReply();
-                }
-                else {
-                    //display msg err
-                    let replyMsgErrElt = document.createElement('small');
-                    replyMsgErrElt.style.color = 'red';
-                    replyMsgErrElt.textContent = "votre commentaire ne peut pas étre vide !";
-                    replyBoxElt.insertBefore(replyMsgErrElt, textAreaElt);
+            // let replyBtnElt = node.getElementsByClassName('sub_menu_reply_btn')[0];
+            // replyBtnElt.addEventListener('click', (ev) => {
+            //     ev.stopPropagation();
+            //     if (textAreaElt.value != '') {
+            //         //do some ajex
+            //         //TODO: you can use promise to control if we create new comment or not 
+            //         createNewCommentReply();
+            //     }
+            //     else {
+            //         //display msg err
+            //         let replyMsgErrElt = document.createElement('small');
+            //         replyMsgErrElt.style.color = 'red';
+            //         replyMsgErrElt.textContent = "votre commentaire ne peut pas étre vide !";
+            //         replyBoxElt.insertBefore(replyMsgErrElt, textAreaElt);
 
-                    textAreaElt.addEventListener('keydown', ()=> {
-                        if(textAreaElt.value == '') {
-                            replyMsgErrElt.style.display = "block";
-                        }
-                        else {
-                            replyMsgErrElt.style.display = "none";
-                        }
-                    });
-                }
-            });
+            //         textAreaElt.addEventListener('keydown', ()=> {
+            //             if(textAreaElt.value == '') {
+            //                 replyMsgErrElt.style.display = "block";
+            //             }
+            //             else {
+            //                 replyMsgErrElt.style.display = "none";
+            //             }
+            //         });
+            //     }
+            // });
         }
 
     });
