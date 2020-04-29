@@ -37,65 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    //manage search bar items
-    let selectElt = document.getElementsByClassName('select');
-    let optionElts = document.querySelectorAll('.select .option');
-
-    document.addEventListener('click', () => {
-        //hide list when click outside it
-        let selectListElt = document.getElementsByClassName('select_list');
-        for (let index = 0; index < selectListElt.length; index++) {
-            if (!selectListElt[index].classList.contains('none'))
-                selectListElt[index].classList.add('none');
-        }
-    });
-
-    //display list on click
-    for (let index = 0; index < selectElt.length; index++) {
-        let selectOutputElt = selectElt[index].getElementsByClassName('select_output')[0];
-        selectOutputElt.addEventListener('click', (e) => {
-            e.stopPropagation();
-
-            //hide other list
-            let selectListElt = document.getElementsByClassName('select_list');
-            for (let i = 0; i < selectListElt.length; i++) {
-                if (!selectListElt[i].classList.contains('none'))
-                    selectListElt[i].classList.add('none');
-            }
-            // display our list
-            let selectedElt = selectElt[index].getElementsByClassName('select_list')[0];
-            selectedElt.classList.toggle('none');
-        });
-    }
-
-    //configure the options to change the value of its input when click and display it
-    //we pass the value attribute to the input so you should use value for search or change the logic here. (if not understand contact ghatzou ...)
-    for (let index = 0; index < optionElts.length; index++) {
-        optionElts[index].addEventListener('click', (e) => {
-            e.stopPropagation();
-
-            let node = optionElts[index];
-            //get the specific output
-            let find = false;
-            while (!find) {
-                if (node && node.classList.contains('select'))
-                    find = true;
-                else
-                    node = node.parentElement;
-            }
-            if (node) {
-                let selectOutputElt = node.getElementsByClassName('select_output')[0];
-                let selectListElt = node.getElementsByClassName('select_list')[0];
-                let inputElt = node.getElementsByTagName('input')[0];
-                selectOutputElt.textContent = optionElts[index].textContent;
-                inputElt.value = optionElts[index].value;
-                console.log(inputElt.value);
-                selectOutputElt.style.color = '#000';
-                selectListElt.classList.toggle('none');
-            }
-        });
-    }
-
     //click on search btn
     // let searchBtnElt = document.getElementById('submit_search');
     // searchBtnElt.addEventListener('click', () => {

@@ -455,6 +455,10 @@ div.select {
     background-color: #fff;
 }
 
+.select ul li.option:last-child {
+    border-radius: 0px 0px 24px 24px;
+}
+
 .select .select_output {
     display: block;
     position: relative;
@@ -481,11 +485,63 @@ div.select {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
+    border-top: 7px solid #000000;
+}
+
+.select .select_list.none+.select_output:after {
     border-top: 7px solid #dfdfdf;
 }
 
 .select ul li.option:hover {
     background-color: #B8B8B8;
+}
+
+.select.multiple li.option {
+    font-size: 1.2rem;
+}
+
+.select.multiple label {
+    display: inline;
+}
+
+.select.multiple li.option label {
+    display: inline-block;
+    width: calc(100% - 30px);
+    font-size: 1.2rem;
+    color: #383838;
+    line-height: unset;
+    margin: unset;
+}
+
+.select.multiple input[type=checkbox]{
+    width: 13px;
+    height: 13px;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+}
+
+.select.multiple .select_output {
+    height: unset;
+    min-height: 40px;
+}
+
+.select.multiple .select_output .output-option-c {
+    background-color: #eee;
+    padding: 2px 5px;
+    white-space: nowrap;
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+}
+
+.select.multiple .select_output span.remove-option {
+    color: red;
+    margin-right: 5px;
+}
+
+.select.multiple .select_output span.output-option-text {
+    color: black;
 }
 
 @media all and (max-width: 1024px) {

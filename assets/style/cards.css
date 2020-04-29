@@ -49,19 +49,18 @@ section.s_skills_c {
 
 .skill_id_photo_c .skill_id_photo {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    line-height: 52px;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.skill_id_photo_c .skill_id_photo svg {
-    width: 60%;
-    height: 60%;
-    vertical-align: middle;
-    margin-bottom: 3px;
+.skill_id_photo_c .skill_id_photo.tap {
+    background-image: url(../images/tap.svg);
 }
 
 .skill_id_c {
