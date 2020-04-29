@@ -136,6 +136,74 @@
     resize: none;
 }
 
+.form-err-c {
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.form-err-c p {
+    padding: 18px 20px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.form-err-c p span::after{
+    content: '';
+    margin-right: 10px;
+}
+
+.form-err-c.red {
+    border: solid 1px #a62b2b;
+    background-color: #fff3f3;
+}
+
+.form-err-c.red p {
+    color: #a62b2b;
+}
+
+.form-err-c.red p span::after{
+    content: '*';
+}
+
+.form-err-c.green {
+    border: solid 1px #33a62b;
+    background-color: #d8ffd5;
+}
+
+.form-err-c.green p {
+    color: #33a62b;
+}
+
+.form-err-c.green p span::after {
+    background-image: url(../images/tick.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.form-err-c.orange {
+    border: solid 1px #ffbb00;
+    background-color: #fffaea;
+}
+
+.form-err-c.orange p {
+    color: #ffbb00;
+}
+
+.form-err-c.orange p span::after {
+    background-image: url(../images/risk.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
 @media all and (max-width:768px) {
     .f_main {
         margin: 30px 30px;
