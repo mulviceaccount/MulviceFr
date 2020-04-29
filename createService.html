@@ -288,15 +288,87 @@
                     <small>Entrez un titre clair en arabe qui décrit le service que vous souhaitez fournir. N'entrez pas
                         de symboles ou de mots tels que "exclusivement".</small>
                 </div>
-                <div class="m_s_form_row">
-                    <div class="flex m_s_form_sub_row">
-                        <div>
+                <div class="m_s_form_row overflow_visible">
+                    <div class="flex m_s_form_sub_row overflow_visible" style="margin-bottom: 10px;">
+                        <div class="overflow_visible">
                             <label for="category_input">Catégorie :</label>
-                            <input type="select" class="white" id="category_input" placeholder="Catégorie">
+                            <div class="s_item s_simple s_category_c overflow_visible">
+                                <div class="select">
+                                    <ul class="select_list none">
+                                        <input type="text" name="category_input" id="category_input" class="none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">cat one</li>
+                                        <li role="option" value="2" class="option">cat two</li>
+                                        <li role="option" value="3" class="option">cat three</li>
+                                        <li role="option" value="4" class="option">cat foor</li>
+                                    </ul>
+                                    <p data-placeholder="Catégorie" class="select_output"></p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="overflow_visible">
                             <label for="sub_category_input">Sous-catégorie :</label>
-                            <input type="text" class="white" id="sub_category_input" placeholder="Sous catégorie">
+                            <div class="s_item s_simple s_category_c overflow_visible">
+                                <div class="select multiple">
+                                    <ul class="select_list none">
+                                        <p class="blankli"></p>
+                                        <li role="option" value="1" class="option">
+                                            <span><input type="checkbox" name="1" value="cat one" id="1"></span>
+                                            <span><label for="1">cat one</label></span>
+                                        </li>
+                                        <li role="option" value="2" class="option">
+                                            <span><input type="checkbox" name="2" value="cat two" id="2"></span>
+                                            <span><label for="2">cat two</label></span>
+                                        </li>
+                                        <li role="option" value="3" class="option">
+                                            <span><input type="checkbox" name="3" value="cat three" id="3"></span>
+                                            <span><label for="3">cat three</label></span>
+                                        </li>
+                                        <li role="option" value="4" class="option">
+                                            <span><input type="checkbox" name="4" value="cat foor" id="4"></span>
+                                            <span><label for="4">cat foor</label></span>
+                                        </li>
+                                        <li role="option" value="5" class="option">
+                                            <span><input type="checkbox" name="5" value="cat five" id="5"></span>
+                                            <span><label for="5">cat five</label></span>
+                                        </li>
+                                        <li role="option" value="6" class="option">
+                                            <span><input type="checkbox" name="6" value="cat six" id="6"></span>
+                                            <span><label for="6">cat six</label></span>
+                                        </li>
+                                        <li role="option" value="7" class="option">
+                                            <span><input type="checkbox" name="1" value="cat one" id="7"></span>
+                                            <span><label for="7">cat one</label></span>
+                                        </li>
+                                        <li role="option" value="8" class="option">
+                                            <span><input type="checkbox" name="2" value="cat two" id="8"></span>
+                                            <span><label for="8">cat two</label></span>
+                                        </li>
+                                        <li role="option" value="9" class="option">
+                                            <span><input type="checkbox" name="3" value="cat three" id="9"></span>
+                                            <span><label for="9">cat three</label></span>
+                                        </li>
+                                        <li role="option" value="10" class="option">
+                                            <span><input type="checkbox" name="4" value="cat foor" id="10"></span>
+                                            <span><label for="10">cat foor</label></span>
+                                        </li>
+                                        <li role="option" value="11" class="option">
+                                            <span><input type="checkbox" name="5" value="cat five" id="11"></span>
+                                            <span><label for="11">cat five</label></span>
+                                        </li>
+                                        <li role="option" value="12" class="option">
+                                            <span><input type="checkbox" name="6" value="cat six" id="12"></span>
+                                            <span><label for="12">cat six</label></span>
+                                        </li>
+                                        <li role="option" value="13" class="option">
+                                            <span><input type="checkbox" name="6" value="cat six" id="13"></span>
+                                            <span><label for="13">cat six</label></span>
+                                        </li>
+                                    </ul>
+                                    <div data-placeholder="Sous catégorie" class="select_output">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <small>Le classement principal ne peut pas être modifié avec l'agence après acceptation du
@@ -849,6 +921,7 @@
     </div>
 </body>
 <script src="assets/js/MainHeaderC.js"></script>
+<script src="assets/js/select.js"></script>
 <!--only if connected-->
 <script src="assets/js/leftNav.js"></script>
 <!--only if connected-->
