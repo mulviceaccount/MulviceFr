@@ -217,7 +217,7 @@
     height: 28px;
 }
 
-.f_main.p_inf .msf_c{
+.f_main.p_inf .msf_c {
     background-color: #ffbb00;
     width: 120px;
     height: 120px;
@@ -415,7 +415,23 @@
     min-width: fit-content;
 }
 
-@media all and (max-width:1054px) {    
+div.select {
+    position: relative;   
+}
+
+div.select ul {
+    border-radius: 10px 10px 24px 24px;
+}
+
+div.select .select_output{
+    font-size: 1.2rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: solid 1px #dfdfdf;
+    background-color: #fff;
+}
+
+@media all and (max-width:1054px) {
     .f_main .planning_c {
         padding: 20px 0px;
         display: block;
