@@ -8,6 +8,7 @@ section.s_skills_c {
 }
 
 .s_skills_c .a_skill_c {
+    zoom: 0.87;
     margin: 10px 15px;
     position: relative;
     width: 350px;
@@ -412,4 +413,42 @@ section.s_skills_c {
         width: 18px;
         height: 18px;
     }
+}
+
+.skill_id_photo_c .skill_id_photo.transport {
+    background-image: url(../images/transport.svg);
+}
+
+.skill_id_photo_c .skill_id_photo.aide_handicap {
+    background-image: url(../images/aide_handicap.svg);
+}
+.skill_id_photo_c .skill_id_photo.animaux {
+    background-image: url(../images/animaux.svg);
+}
+.skill_id_photo_c .skill_id_photo.beaute {
+    background-image: url(../images/beaute.svg);
+}
+.skill_id_photo_c .skill_id_photo.cours_formations {
+    background-image: url(../images/cours_formations.svg);
+}
+.skill_id_photo_c .skill_id_photo.enfants {
+    background-image: url(../images/enfants.svg);
+}
+.skill_id_photo_c .skill_id_photo.evenementiel {
+    background-image: url(../images/evenementiel.svg);
+}
+.skill_id_photo_c .skill_id_photo.informatique {
+    background-image: url(../images/informatique.svg);
+}
+.skill_id_photo_c .skill_id_photo.jardinage {
+    background-image: url(../images/jardinage.svg);
+}
+.skill_id_photo_c .skill_id_photo.mecanique {
+    background-image: url(../images/mecanique.svg);
+}
+.skill_id_photo_c .skill_id_photo.nettoyage {
+    background-image: url(../images/nettoyage.svg);
+}
+.skill_id_photo_c .skill_id_photo.sante {
+    background-image: url(../images/sante.svg);
 }
