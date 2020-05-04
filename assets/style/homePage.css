@@ -229,6 +229,7 @@ div.s_age_c {
     height: 200px;
     margin: 0 auto;
     position: relative;
+    border-radius: 5px;
 }
 
 #pre_footer_c .pre_footer img {
